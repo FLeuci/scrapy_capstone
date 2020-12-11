@@ -14,6 +14,8 @@ class WebCrawler(scrapy.Spider):
     #    urls = 'https://blog.griddynamics.com/'
     #   yield scrapy.Request(url=urls, callback=self.parse)
 
+
+
     def start_requests(self):
         urls2 = 'https://blog.griddynamics.com/all-authors/'
         yield scrapy.Request(url=urls2, callback=self.parse2)
