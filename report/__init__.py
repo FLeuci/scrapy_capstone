@@ -21,7 +21,7 @@ class WebCrawler(CrawlSpider):
     #    urls = 'https://blog.griddynamics.com/'
     #   yield scrapy.Request(url=urls, callback=self.parse)
 
-    rules = (Rule(LinkExtractor(), callback = 'parse2'),)
+    rules = (Rule(LinkExtractor(allow = ('author')), callback = 'parse2'),)
     start_urls = ['https://blog.griddynamics.com/all-authors/']
 
     # def start_requests(self):
@@ -31,6 +31,7 @@ class WebCrawler(CrawlSpider):
         first = re.sub(r"(<a href=\"#)","",record)
         print(first)
 
+
     def parse2(self, response):
         autori = list(response.xpath('//*[@id="authorsmini"]/div/a').getall())
         self.get_href(autori[0])
@@ -38,9 +39,20 @@ class WebCrawler(CrawlSpider):
         list_autori = list(autori_list_clean)
         print('\n'.join(list_autori))
 
-        substring = 'Vlad'
-        counter = list_autori.count(substring)
-        print(counter)
+        for autore in list_autori:
+            with open('authors.txt', 'a+') as f:
+                f.write(autore + '\n')
+
+
+        article_list = response.xpath('//*[@id="slick-slide01"]/a/article/div/h4').extract()
+        #article_list_clean = map(self.clean_from_tag, article_list)
+        print('\n'.join(article_list))
+
+        date_list = response.xpath('//*[@id="slick-slide01"]/a/article/div[1]/span/text()').extract()
+        date_list_clean = map(self.clean_from_tag, date_list)
+        print('\n'.join(date_list_clean))
+
+
 
     def clean_from_tag(self, tag):
         return re.sub(r"[\n\t]*", '', re.sub(r"<.*?>", '', tag))
@@ -58,9 +70,7 @@ class WebCrawler(CrawlSpider):
 #        date_list_clean = map(self.clean_from_tag, date_list)
 #        print('\n'.join(date_list_clean))
 #
- #       article_list = response.xpath('//*[@id="woe"]/section/div/div[2]/a/article/h4').extract()
-  #      article_list_clean = map(self.clean_from_tag, article_list)
-   #     print('\n'.join(article_list_clean))
+
 
     #    section = response.xpath('//*[@id="woe"]/section/div/div[2]/a/article')
      #   print(section)
