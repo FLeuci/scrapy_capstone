@@ -7,6 +7,11 @@ import re
 from scrapy.crawler import CrawlerProcess
 
 
+def get_href(record):
+    first = re.sub("(a href=\"#)([a-z]*)(\")", "",record)
+    print(first)
+
+
 class WebCrawler(scrapy.Spider):
     name = 'Start'
 
@@ -20,8 +25,13 @@ class WebCrawler(scrapy.Spider):
         urls2 = 'https://blog.griddynamics.com/all-authors/'
         yield scrapy.Request(url=urls2, callback=self.parse2)
 
+    def get_href(private, record):
+        first = re.sub(r"(a href=\"#)","",record)
+        print(first)
+
     def parse2(self, response):
-        autori = response.xpath('//*[@id="authorsmini"]/div/a').extract()
+        autori = list(response.xpath('//*[@id="authorsmini"]/div/a').getall())
+        self.get_href(autori[0])
         autori_list_clean = map(self.clean_from_tag, autori)
         list_autori = list(autori_list_clean)
         print('\n'.join(list_autori))
@@ -29,8 +39,6 @@ class WebCrawler(scrapy.Spider):
         substring = 'Vlad'
         counter = list_autori.count(substring)
         print(counter)
-
-
 
     def clean_from_tag(self, tag):
         return re.sub(r"[\n\t]*", '', re.sub(r"<.*?>", '', tag))
@@ -68,3 +76,5 @@ if __name__ == "__main__":
     process = CrawlerProcess()
     process.crawl(WebCrawler)
     process.start()
+
+    #create another process that calls several Spiders for each pourpose
