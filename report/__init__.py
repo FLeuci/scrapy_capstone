@@ -5,6 +5,8 @@
 import scrapy
 import re
 from scrapy.crawler import CrawlerProcess
+from scrapy.spiders import CrawlSpider, Rule
+from scrapy.linkextractors import LinkExtractor
 
 
 def get_href(record):
@@ -12,21 +14,21 @@ def get_href(record):
     print(first)
 
 
-class WebCrawler(scrapy.Spider):
+class WebCrawler(CrawlSpider):
     name = 'Start'
 
     #def start_requests(self):
     #    urls = 'https://blog.griddynamics.com/'
     #   yield scrapy.Request(url=urls, callback=self.parse)
 
+    rules = (Rule(LinkExtractor(), callback = 'parse2'),)
+    start_urls = ['https://blog.griddynamics.com/all-authors/']
 
-
-    def start_requests(self):
-        urls2 = 'https://blog.griddynamics.com/all-authors/'
-        yield scrapy.Request(url=urls2, callback=self.parse2)
-
+    # def start_requests(self):
+    #     urls2 = 'https://blog.griddynamics.com/all-authors/'
+    #     yield scrapy.Request(url=urls2, callback=self.parse2)
     def get_href(private, record):
-        first = re.sub(r"(a href=\"#)","",record)
+        first = re.sub(r"(<a href=\"#)","",record)
         print(first)
 
     def parse2(self, response):
