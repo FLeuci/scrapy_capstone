@@ -14,79 +14,31 @@ def get_href(record):
     print(first)
 
 
-class WebCrawler(CrawlSpider):
-    name = 'Start'
+class AllAuthorsCrawler(CrawlSpider):
+    name = 'AllAuthors'
 
-    #def start_requests(self):
-    #    urls = 'https://blog.griddynamics.com/'
-    #   yield scrapy.Request(url=urls, callback=self.parse)
-
-    rules = (Rule(LinkExtractor(allow = ('author')), callback = 'parse2'),)
+    rules = (Rule(LinkExtractor(allow = ('/author/')), callback = 'cache_author_links'),)
     start_urls = ['https://blog.griddynamics.com/all-authors/']
 
-    # def start_requests(self):
-    #     urls2 = 'https://blog.griddynamics.com/all-authors/'
-    #     yield scrapy.Request(url=urls2, callback=self.parse2)
-    def get_href(private, record):
-        first = re.sub(r"(<a href=\"#)","",record)
-        print(first)
+    def cache_author_links(self, response):
+        with open('authors.txt', 'a+') as f:
+            f.write(response._get_url() + '\n')
 
+class AllArticlesByAuthorCrawler(CrawlSpider):
+    name = 'AllArticlesByAuthor'
+    def fetch_urls(self):
+        author_urls = []
+        with open('data') as f:
+            for line in f:
+                author_urls.append(line)
+        return author_urls
 
-    def parse2(self, response):
-        autori = list(response.xpath('//*[@id="authorsmini"]/div/a').getall())
-        self.get_href(autori[0])
-        autori_list_clean = map(self.clean_from_tag, autori)
-        list_autori = list(autori_list_clean)
-        print('\n'.join(list_autori))
-
-        for autore in list_autori:
-            with open('authors.txt', 'a+') as f:
-                f.write(autore + '\n')
-
-
-        article_list = response.xpath('//*[@id="slick-slide01"]/a/article/div/h4').extract()
-        #article_list_clean = map(self.clean_from_tag, article_list)
-        print('\n'.join(article_list))
-
-        date_list = response.xpath('//*[@id="slick-slide01"]/a/article/div[1]/span/text()').extract()
-        date_list_clean = map(self.clean_from_tag, date_list)
-        print('\n'.join(date_list_clean))
-
-
-
-    def clean_from_tag(self, tag):
-        return re.sub(r"[\n\t]*", '', re.sub(r"<.*?>", '', tag))
-
-#        author_list = response.xpath('//*[@id="woe"]/section/div/div[2]/a/article/div[2]/span/strong').extract()
- #       author_list_clean = map(self.clean_from_tag, author_list)
-  #      list_author = list(author_list_clean)
-   #     print('\n'.join(list_author))
-#
- #       substring = 'a'
-  #      count = list_author.count(substring)
-   #     print(count)
-#
-#        date_list = response.xpath('//*[@id="woe"]/section/div/div[2]/a/article/div[2]/span/text()').extract()
-#        date_list_clean = map(self.clean_from_tag, date_list)
-#        print('\n'.join(date_list_clean))
-#
-
-
-    #    section = response.xpath('//*[@id="woe"]/section/div/div[2]/a/article')
-     #   print(section)
-      #  sec = section.xpath('div[2]/span/strong')
-       # print(sec)
-
-        #yield {
-         #   'author': author_list_clean,
-          #  'article': article_list_clean,
-           # 'date': date_list_clean
-        #}
+    start_urls = fetch_urls()
 
 
 if __name__ == "__main__":
     process = CrawlerProcess()
-    process.crawl(WebCrawler)
+    process.crawl(AllAuthorsCrawler)
     process.start()
 
     #create another process that calls several Spiders for each pourpose
