@@ -21,35 +21,32 @@ class ReportCrawler:
             shutil.rmtree(os.path.dirname("./data/"))
         os.makedirs(os.path.dirname("./data/"))
 
-    class AllAuthorsCrawler(CrawlSpider):
-        name = 'AllAuthors'
-
-        rules = (Rule(LinkExtractor(allow=('/author/')), callback='cache_author_links'),)
-        start_urls = ['https://blog.griddynamics.com/all-authors/']
-
-        def cache_author_links(self, response):
-            ReportCrawler.author_urls.append(response._get_url())
-
-    class AllArticlesByAuthorCrawler(Spider):
+    class AllArticlesByAuthorCrawler(CrawlSpider):
 
         name = 'AllArticlesByAuthor'
 
-        def start_requests(self):
-            for one_url in ReportCrawler.author_urls:
-                # yield scrapy.Request(url=one_url, callback=self.parse)
-                yield scrapy.Request(url=one_url)
+        rules = (Rule(LinkExtractor(allow=('/author/')), callback='parse'),)
+        start_urls = ['https://blog.griddynamics.com/all-authors/']
 
         def parse(self, response, **kwargs):
-            key_url = response._get_url().rsplit('/')[-2] #get the author nickname after the last slash
+            key_url = response._get_url().rsplit('/')[-2]  # get the author nickname after the last slash
             name = response.xpath('//*[@id="woe"]/div[2]/div/div[1]/div[2]/h3/text()').extract_first()
+            job_title = response.xpath('//*[@id="woe"]/div[2]/div/div[1]/div[2]/p/text()').extract_first()
+            linkedin_url = response.xpath('//*[@id="woe"]/div[2]/div/div[1]/div[1]/ul/li/a/@href').extract_first()
             date_title_part = response.xpath('//*[@id="woe"]/div[2]/div/div[2]/div[position() > 1]')
             articles = []
             for row in date_title_part:
-                date = Selector(text=row.extract()).xpath('///span/text()').extract_first()
-                title = Selector(text=row.extract()).xpath('///a/text()').extract_first()
-                articles.append({'name': name, 'date': date, 'title': title})
+                row_extracted = row.extract()
+                date = Selector(text=row_extracted).xpath('///span/text()').extract_first()
+                title = Selector(text=row_extracted).xpath('///a/text()').extract_first()
+                articles.append({'keyUrl': key_url,
+                                 'name': name,
+                                 'jobTitle': job_title,
+                                 'linkedinUrl': linkedin_url,
+                                 'date': date,
+                                 'title': title})
 
-            with open(f"./data/{key_url}-data.json","w") as f:
+            with open(f"./data/{key_url}-data.json", "w") as f:
                 f.write(str(articles))
 
     def crawl(self):
@@ -58,7 +55,6 @@ class ReportCrawler:
 
         @defer.inlineCallbacks
         def crawl():
-            yield runner.crawl(ReportCrawler.AllAuthorsCrawler)
             yield runner.crawl(ReportCrawler.AllArticlesByAuthorCrawler)
             reactor.stop()
 
