@@ -4,6 +4,8 @@
 # your spiders.
 import scrapy
 import re
+
+from scrapy import Selector
 from scrapy.crawler import CrawlerProcess
 from scrapy.spiders import CrawlSpider, Rule
 from scrapy.linkextractors import LinkExtractor
@@ -28,14 +30,20 @@ class WebCrawler(CrawlSpider):
     #     urls2 = 'https://blog.griddynamics.com/all-authors/'
     #     yield scrapy.Request(url=urls2, callback=self.parse2)
     def parse1(self, response):
-        author_urls = []
-        author_urls.append(response._get_url())
-        print(author_urls)
 
-        for author in author_urls:
-            date = response.xpath('//*[@id="woe"]/div/div/div/div/span').extract()
-            title = response.xpath('//*[@id="woe"]/div/div/div/div/a').extract()
-            print(author, '\n', date, '\n', title)
+        author_name = response.xpath('//*[@id="woe"]/div[2]/div/div[1]/div[2]/h3/text()').extract_first()
+
+        date_title_part = response.xpath('//*[@id="woe"]/div[2]/div/div[2]/div[position() > 1]')
+        job_title = response.xpath('//*[@id="woe"]/div[2]/div/div[1]/div[2]/p/text()').extract_first()
+        linkedin_url = response.xpath('//*[@id="woe"]/div[2]/div/div[1]/div[1]/ul/li/a/@href').extract_first()
+        for row in date_title_part:
+            date = Selector(text=row.extract()).xpath('///span/text()').extract_first()
+            title = Selector(text=row.extract()).xpath('///a/text()').extract_first()
+            print(f"name: {author_name}, date: {date} \t \t title: {title}, job_title: {job_title}, linkedin_url: {linkedin_url}")
+            with open('authors.json', 'a+') as f:
+                f.write(f"author: {author_name}, date: {date} \t \t title: {title}, job title: {job_title}, linkedin url: {linkedin_url}, '\n',")
+
+
 
 
 
@@ -50,33 +58,6 @@ class WebCrawler(CrawlSpider):
         list_autori = list(autori_list_clean)
         print('\n'.join(list_autori))
         print(len(list_autori))
-
-
-        for autore in list_autori:
-            url = [
-                'https://blog.griddynamics.com/all-authors/#' + autore
-            ]
-            #print(url)
-
-
-
-
-
-
-
-
-
-
-
-       # for autore in list_autori:
-          #  with open('authors.txt', 'a+') as f:
-            #    f.write(autore + '\n')
-
-
-
-
-
-
 
 
     def clean_from_tag(self, tag):
