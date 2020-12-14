@@ -21,12 +21,24 @@ class WebCrawler(CrawlSpider):
     #    urls = 'https://blog.griddynamics.com/'
     #   yield scrapy.Request(url=urls, callback=self.parse)
 
-    rules = (Rule(LinkExtractor(allow = ('author')), callback = 'parse2'),)
+    rules = (Rule(LinkExtractor(allow = ('/author/')), callback = 'parse1'),)
     start_urls = ['https://blog.griddynamics.com/all-authors/']
 
     # def start_requests(self):
     #     urls2 = 'https://blog.griddynamics.com/all-authors/'
     #     yield scrapy.Request(url=urls2, callback=self.parse2)
+    def parse1(self, response):
+        author_urls = []
+        author_urls.append(response._get_url())
+        print(author_urls)
+
+        for author in author_urls:
+            date = response.xpath('//*[@id="woe"]/div/div/div/div/span').extract()
+            title = response.xpath('//*[@id="woe"]/div/div/div/div/a').extract()
+            print(author, '\n', date, '\n', title)
+
+
+
     def get_href(private, record):
         first = re.sub(r"(<a href=\"#)","",record)
         print(first)
@@ -34,23 +46,36 @@ class WebCrawler(CrawlSpider):
 
     def parse2(self, response):
         autori = list(response.xpath('//*[@id="authorsmini"]/div/a').getall())
-        self.get_href(autori[0])
         autori_list_clean = map(self.clean_from_tag, autori)
         list_autori = list(autori_list_clean)
         print('\n'.join(list_autori))
+        print(len(list_autori))
+
 
         for autore in list_autori:
-            with open('authors.txt', 'a+') as f:
-                f.write(autore + '\n')
+            url = [
+                'https://blog.griddynamics.com/all-authors/#' + autore
+            ]
+            #print(url)
 
 
-        article_list = response.xpath('//*[@id="slick-slide01"]/a/article/div/h4').extract()
-        #article_list_clean = map(self.clean_from_tag, article_list)
-        print('\n'.join(article_list))
 
-        date_list = response.xpath('//*[@id="slick-slide01"]/a/article/div[1]/span/text()').extract()
-        date_list_clean = map(self.clean_from_tag, date_list)
-        print('\n'.join(date_list_clean))
+
+
+
+
+
+
+
+
+       # for autore in list_autori:
+          #  with open('authors.txt', 'a+') as f:
+            #    f.write(autore + '\n')
+
+
+
+
+
 
 
 
