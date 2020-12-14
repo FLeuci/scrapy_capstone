@@ -1,0 +1,1 @@
+gd_base_url = "https://blog.griddynamics.com"
