@@ -48,6 +48,7 @@ class ReportCrawler:
         @defer.inlineCallbacks
         def crawl():
             yield runner.crawl(AuthorInfoCrawler)
+            yield runner.crawl(ArticleInfoCrawler)
             reactor.stop()
 
         crawl()
@@ -60,6 +61,9 @@ class ReportCrawler:
     def export_json(self):
         with open('./data/data.json', 'w') as f:
             f.write(str(self.articles))
+
+        with open('./data/articles.json', 'w') as f:
+            f.write(str(self.articles_details))
 
 
 class AuthorInfoCrawler(CrawlSpider):
@@ -106,26 +110,26 @@ class ArticleInfoCrawler(Spider):
 
         title = response.xpath('//*[@id="wrap"]/h1/text()').extract_first()
         url_to_full_version = response._get_url()
-        body = response.path('//*[@id="woe"]/section/div/p/text()').extract()
+        body = response.xpath('//*[@id="woe"]/section/div/p/text()').extract()
         first_160 = body[:160]
         publication_date = response.xpath('//*[@id="wrap"]/div/div[2]/text()').extract_first()
-        authors_fullname = response.xpath('//*[@id="wrap"]/div/div[position() > 1]')
-        tags = response.xpath('//*[@id="woe"]/section/div/div/text()').extract()
+        authors_fullname = response.xpath('//*[@id="wrap"]/div/div[1]/div[position() > 1]')
+        tags = response.xpath('//*[@id="woe"]/section[3]/div/div/a/text()').extract()
         for row in authors_fullname:
             row_extracted = row.extract()
-            author_fullname = Selector(text=row_extracted).xpath('///span/text()').extract_first()
+            author_fullname = Selector(text=row_extracted).xpath('///span/a/span/text()').extract_first()
             key_url = Selector(text=row_extracted).xpath('///a/@href').extract_first()
             ReportCrawler.articles_details.append({'title': title,
-                                                   'url': url_to_full_version,
+                                                   'article url': url_to_full_version,
                                                    'first 160': first_160,
                                                    'date': publication_date,
                                                    'author': author_fullname,
-                                                   'article_url': key_url,
+                                                   'author_url': 'https://blog.griddynamics.com' + key_url,
                                                    'tag': tags })
-
 
 
 if __name__ == "__main__":
     crawler = ReportCrawler()
     crawler.crawl()
     crawler.export_json()
+
