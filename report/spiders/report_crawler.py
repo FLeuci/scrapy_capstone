@@ -1,3 +1,5 @@
+import json
+
 from scrapy import Selector, Request
 from scrapy.crawler import CrawlerRunner
 from scrapy.linkextractors import LinkExtractor
@@ -35,7 +37,9 @@ class ReportCrawler:
 
     def export_json(self):
         with open(f"{ReportCrawler.base_path}authors.json", "w") as f:
-            f.write(str(ReportCrawler.authors))
+            f.write(json.dumps(ReportCrawler.authors))
+        with open(f"{ReportCrawler.base_path}articles.json", "w") as f:
+            f.write(json.dumps(ReportCrawler.articles))
 
 
 class AuthorInfoCrawler(CrawlSpider):
@@ -52,16 +56,16 @@ class AuthorInfoCrawler(CrawlSpider):
         for row in date_title_part:
             row_extracted = row.extract()
             date = Selector(text=row_extracted).xpath('///span/text()').extract_first()
-            date_formatted = datetime.strptime(date, '%B %d, %Y').strftime('%Y%m%d')
+            date_formatted = conf.pdtts(date, '%B %d, %Y')
             article_title = Selector(text=row_extracted).xpath('///a/text()').extract_first()
             article_url = Selector(text=row_extracted).xpath('///a/@href').extract_first()
             ReportCrawler.authors.append({'keyUrl': key_url,
-                                           'name': name,
-                                           'jobTitle': job_title,
-                                           'linkedinUrl': linkedin_url,
-                                           'date': date_formatted,
-                                           'article_title': article_title,
-                                           'article_url': article_url})
+                                          'name': name,
+                                          'jobTitle': job_title,
+                                          'linkedinUrl': linkedin_url,
+                                          'date': date_formatted,
+                                          'article_title': article_title,
+                                          'article_url': article_url})
 
 
 class ArticleInfoCrawer(Spider):
@@ -78,19 +82,24 @@ class ArticleInfoCrawer(Spider):
         title = response.xpath('//*[@id="wrap"]/h1/text()').extract_first()
         url_to_full_version = response._get_url()
         first_160 = ''.join(response.xpath('//*[@id="woe"]/section/div/p/text()').extract())[:160]
-        publication_date = response.xpath('//*[@id="wrap"]/div/div[2]/text()').extract_first()
+        date_formatted = conf.pdtts(
+            conf.clean_records_regex(
+                response.xpath('//*[@id="wrap"]/div/div[2]/text()').extract_first(), lambda v: v[0:-2]),
+            '%b %d, %Y')
+        tags = response.xpath('//*[@id="woe"]/section[3]/div/div[1]/a/text()').extract()
         authors_section = response.xpath('//*[@id="wrap"]/div/div[1]/div/span/a')
-
-        #//*[@id="wrap"]/div/div[1]/div[1]/span/a/span/text()
-        #//*[@id="wrap"]/div/div[1]/div[1]/span/a/@href
         for row in authors_section:
-            full_author_url = Selector(text=row.extract()).xpath('///a/@href').extract_first()
-            author_fullname = Selector(text=row.extract()).xpath('///a/span/text()').extract_first()
-            print()
-        # author_fullname
-        # author_url = //*[@id="wrap"]/div/div[2]/text()
-        #tags
-
-
-
-        print(response)
+            full_author_url = Selector(text=row.extract()).xpath('///@href') \
+                .extract_first() \
+                .rsplit('/')[-2]
+            author_fullname = conf.clean_records_regex(
+                Selector(text=row.extract()).xpath('///span/text()').extract_first())
+            ReportCrawler.articles.append({
+                'title': title,
+                'urlFullVersion': url_to_full_version,
+                'first160': first_160,
+                'dateFormatted': date_formatted,
+                'tags': tags,
+                'authorUrl': f"{conf.gd_base_url}/{full_author_url}",
+                'authorName': author_fullname
+            })
