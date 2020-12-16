@@ -6,7 +6,7 @@ from scrapy.linkextractors import LinkExtractor
 from scrapy.spiders import CrawlSpider, Rule, Spider
 from scrapy.utils.log import configure_logging
 from twisted.internet import reactor, defer
-import report.Configs as conf
+import report.utils as conf
 from datetime import datetime
 
 
