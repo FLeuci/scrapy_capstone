@@ -9,161 +9,71 @@
     "article_url": "/semantic-query-parsing-blueprint/"
   },
   {
-    "keyUrl": "michael-ionkin",
-    "name": "Michael Ionkin",
+    "keyUrl": "anna-safonova",
+    "name": "Anna Safonova",
+    "jobTitle": "Saint-Petersburg, Russia",
+    "linkedinUrl": null,
+    "date": "20200803",
+    "article_title": "How to use GCP and AWS big data and AI cloud services from Jupyter Notebook",
+    "article_url": "/work-with-google-cloud-and-aws-services-from-jupyter-notebook/"
+  },
+  {
+    "keyUrl": "andrey-kudryavstev",
+    "name": "Andrey Kudryavstev",
+    "jobTitle": "Senior Software Engineer",
+    "linkedinUrl": null,
+    "date": "20171219",
+    "article_title": "How to use Solr suggester for autocomplete and typeahead search",
+    "article_url": "/utilizing-solr-suggester-for-typeahead-search-engines/"
+  },
+  {
+    "keyUrl": "andrey-kudryavstev",
+    "name": "Andrey Kudryavstev",
+    "jobTitle": "Senior Software Engineer",
+    "linkedinUrl": null,
+    "date": "20170228",
+    "article_title": "How to sort parent documents by child attributes in Solr",
+    "article_url": "/how-to-sort-parent-documents-by-child-attributes-in-solr/"
+  },
+  {
+    "keyUrl": "andrey-kudryavstev",
+    "name": "Andrey Kudryavstev",
+    "jobTitle": "Senior Software Engineer",
+    "linkedinUrl": null,
+    "date": "20170222",
+    "article_title": "Implementing autocomplete with Solr",
+    "article_url": "/implementing-autocomplete-with-solr/"
+  },
+  {
+    "keyUrl": "aholdobin",
+    "name": "Arsenii Holdobin",
+    "jobTitle": "Kharkiv, Ukraine",
+    "linkedinUrl": null,
+    "date": "20201215",
+    "article_title": "Virtual backgrounds: real-time deep semantic segmentation on mobile devices",
+    "article_url": "/virtual-background/"
+  },
+  {
+    "keyUrl": "conor-mcnamara",
+    "name": "Conor McNamara",
+    "jobTitle": "Data Scientist in Engineering: Machine Learning",
+    "linkedinUrl": null,
+    "date": "20180501",
+    "article_title": "Xgboost vs Catboost vs Lightgbm:\nwhich is best for price prediction?",
+    "article_url": "/xgboost-vs-catboost-vs-lightgbm-which-is-best-for-price-prediction/"
+  },
+  {
+    "keyUrl": "anna",
+    "name": "Anna Muslimova",
     "jobTitle": null,
     "linkedinUrl": null,
-    "date": "20200715",
-    "article_title": "Add anomaly detection to your data with Grid Dynamics accelerator",
-    "article_url": "/add-anomaly-detection-to-your-data-with-grid-dynamics-accelerator/"
+    "date": "20200323",
+    "article_title": "WSO2 vs GraphQL: overview and comparison of open source API management products",
+    "article_url": "/wso2-vs-graphql-overview-and-comparison-of-open-source-api-management-products/"
   },
   {
-    "keyUrl": "nina-pakhomova",
-    "name": "Nina Pakhomova",
-    "jobTitle": "Senior Software Engineer",
-    "linkedinUrl": "https://www.linkedin.com/in/nina-pakhomova-gracheva-bardashova-62109816/",
-    "date": "20170629",
-    "article_title": "Creating an image similarity function with TensorFlow and its application in e-commerce",
-    "article_url": "/create-image-similarity-function-with-tensorflow-for-retail/"
-  },
-  {
-    "keyUrl": "nina-pakhomova",
-    "name": "Nina Pakhomova",
-    "jobTitle": "Senior Software Engineer",
-    "linkedinUrl": "https://www.linkedin.com/in/nina-pakhomova-gracheva-bardashova-62109816/",
-    "date": "20170622",
-    "article_title": "Detecting and correcting e-commerce catalog misattribution with image and text classification using Google TensorFlow",
-    "article_url": "/fix-e-commerce-attribution-with-tensorflow-and-image-recognition/"
-  },
-  {
-    "keyUrl": "nina-pakhomova",
-    "name": "Nina Pakhomova",
-    "jobTitle": "Senior Software Engineer",
-    "linkedinUrl": "https://www.linkedin.com/in/nina-pakhomova-gracheva-bardashova-62109816/",
-    "date": "20170620",
-    "article_title": "How Machine Learning can address attribution issues in e-commerce catalogs",
-    "article_url": "/how-machine-learning-can-fix-ecommerce-catalogs-attribution-issues/"
-  },
-  {
-    "keyUrl": "mikhail-klokov",
-    "name": "Mikhail Klokov",
-    "jobTitle": "Development Manager",
-    "linkedinUrl": null,
-    "date": "20171004",
-    "article_title": "Continuous Performance Testing (CPT) with Jagger",
-    "article_url": "/continuous-performance-testing-cpt-with-jagger/"
-  },
-  {
-    "keyUrl": "mikhail-klokov",
-    "name": "Mikhail Klokov",
-    "jobTitle": "Development Manager",
-    "linkedinUrl": null,
-    "date": "20161011",
-    "article_title": "Six design principles of Continuous Performance Testing",
-    "article_url": "/six-design-principles-of-continuous-performance-testing/"
-  },
-  {
-    "keyUrl": "mikhail-klokov",
-    "name": "Mikhail Klokov",
-    "jobTitle": "Development Manager",
-    "linkedinUrl": null,
-    "date": "20160921",
-    "article_title": "How to extend CI pipelines with Continuous Performance Testing",
-    "article_url": "/how-to-extend-continuous-integration-ci-pipelines-with-continuous-performance-testing-cpt/"
-  },
-  {
-    "keyUrl": "mikhail-klokov",
-    "name": "Mikhail Klokov",
-    "jobTitle": "Development Manager",
-    "linkedinUrl": null,
-    "date": "20160905",
-    "article_title": "Challenges of Continuous Performance Testing",
-    "article_url": "/why-isnt-continous-performance-testing-more-common/"
-  },
-  {
-    "keyUrl": "nikolay-khokhlienkov",
-    "name": "Nikolay Khokhlienkov",
-    "jobTitle": "Technical Director",
-    "linkedinUrl": null,
-    "date": "20170323",
-    "article_title": "Using geofence marketing & Bluetooth beacons to improve offline sales",
-    "article_url": "/using-bluetooth-low-energy-beacons-and-geofencing-to-build-brick-and-mortar-store-sales/"
-  },
-  {
-    "keyUrl": "mikhail-khludnev",
-    "name": "Mikhail Khludnev",
-    "jobTitle": "Principal Engineer",
-    "linkedinUrl": null,
-    "date": "20160831",
-    "article_title": "A Frustrating Personal Experience with Unfaceted Search",
-    "article_url": "/a-frustrating-personal-experience-with-unfaceted-search/"
-  },
-  {
-    "keyUrl": "mikhail-khludnev",
-    "name": "Mikhail Khludnev",
-    "jobTitle": "Principal Engineer",
-    "linkedinUrl": null,
-    "date": "20160826",
-    "article_title": "Searching grandchildren and siblings with Solr Block Join",
-    "article_url": "/searching-grandchildren-and-siblings-with-solr-block-join/"
-  },
-  {
-    "keyUrl": "mikhail-khludnev",
-    "name": "Mikhail Khludnev",
-    "jobTitle": "Principal Engineer",
-    "linkedinUrl": null,
-    "date": "20160816",
-    "article_title": "The segmented filter cache and Block Join Query Parser in Solr",
-    "article_url": "/segmented-filter-cache-and-block-join-query-parser-in-solr/"
-  },
-  {
-    "keyUrl": "mikhail-khludnev",
-    "name": "Mikhail Khludnev",
-    "jobTitle": "Principal Engineer",
-    "linkedinUrl": null,
-    "date": "20160810",
-    "article_title": "How to use Block Join to improve search efficiency with nested documents in Solr",
-    "article_url": "/how-to-use-block-join-to-improve-search-efficiency-with-nested-documents-in-solr/"
-  },
-  {
-    "keyUrl": "mikhail-khludnev",
-    "name": "Mikhail Khludnev",
-    "jobTitle": "Principal Engineer",
-    "linkedinUrl": null,
-    "date": "20160721",
-    "article_title": "High-performance Join in Solr with BlockJoinQuery",
-    "article_url": "/high-performance-join-in-solr-with-blockjoinquery/"
-  },
-  {
-    "keyUrl": "oleg-savrasov",
-    "name": "Oleg Savrasov",
-    "jobTitle": "Senior Software Engineer",
-    "linkedinUrl": "https://www.linkedin.com/in/oleg-savrasov-8816513",
-    "date": "20180814",
-    "article_title": "How to implement multi-select faceting for nested documents in Solr",
-    "article_url": "/multi-select-faceting-for-nested-documents-in-solr/"
-  },
-  {
-    "keyUrl": "oleg-savrasov",
-    "name": "Oleg Savrasov",
-    "jobTitle": "Senior Software Engineer",
-    "linkedinUrl": "https://www.linkedin.com/in/oleg-savrasov-8816513",
-    "date": "20160809",
-    "article_title": "How to implement Block Join Faceting in Solr/Lucene",
-    "article_url": "/how-to-implement-block-join-faceting-in-solr-lucene/"
-  },
-  {
-    "keyUrl": "oleg-savrasov",
-    "name": "Oleg Savrasov",
-    "jobTitle": "Senior Software Engineer",
-    "linkedinUrl": "https://www.linkedin.com/in/oleg-savrasov-8816513",
-    "date": "20160720",
-    "article_title": "Introduction to Block Join Faceting in Solr",
-    "article_url": "/introduction-to-block-join-faceting-in-solr/"
-  },
-  {
-    "keyUrl": "nikita",
-    "name": "Nikita Kotov",
+    "keyUrl": "dmitry",
+    "name": "Dmitry Karachentsev",
     "jobTitle": null,
     "linkedinUrl": null,
     "date": "20200630",
@@ -171,166 +81,319 @@
     "article_url": "/edw-performance-comparison/"
   },
   {
-    "keyUrl": "max-martynov",
-    "name": "Max Martynov",
-    "jobTitle": "CTO",
+    "keyUrl": "andrey-chevozerov",
+    "name": "Andrey Chevozerov",
+    "jobTitle": "Senior iOS Developer",
     "linkedinUrl": null,
-    "date": "20201214",
-    "article_title": "Digital Customer Experience: A Path to Profitable Growth",
-    "article_url": "/digital-customer-experience-a-path-to-profitable-growth/"
+    "date": "20190731",
+    "article_title": "Easily move your native app to Flutter",
+    "article_url": "/easily-move-your-native-app-to-flutter/"
   },
   {
-    "keyUrl": "max-martynov",
-    "name": "Max Martynov",
-    "jobTitle": "CTO",
-    "linkedinUrl": null,
-    "date": "20201214",
-    "article_title": "Dynamic Talks | Data Science",
-    "article_url": "/dynamic-talks-data-science/"
-  },
-  {
-    "keyUrl": "max-martynov",
-    "name": "Max Martynov",
-    "jobTitle": "CTO",
-    "linkedinUrl": null,
-    "date": "20201214",
-    "article_title": "Industrial label recognition",
-    "article_url": "/industrial-label-recognition/"
-  },
-  {
-    "keyUrl": "max-martynov",
-    "name": "Max Martynov",
-    "jobTitle": "CTO",
-    "linkedinUrl": null,
-    "date": "20201214",
-    "article_title": "Auto ML: Fruits and Vegetables Recognition",
-    "article_url": "/auto-ml-fruits-and-vegetables-recognition/"
-  },
-  {
-    "keyUrl": "max-martynov",
-    "name": "Max Martynov",
-    "jobTitle": "CTO",
-    "linkedinUrl": null,
-    "date": "20201029",
-    "article_title": "How to Release Components Independently when you have a Distributed Monolith",
-    "article_url": "/how-to-release-components-independently-if-what-you-have-is-a-distributed-monolith/"
-  },
-  {
-    "keyUrl": "max-martynov",
-    "name": "Max Martynov",
-    "jobTitle": "CTO",
-    "linkedinUrl": null,
-    "date": "20201020",
-    "article_title": "Turn Data Into Insights Faster With Grid Dynamics Analytical Data Platform Accelerator on AWS Cloud",
-    "article_url": "/turn-data-into-insights-faster-with-grid-dynamics-analytical-data-platform-accelerator-on-aws-cloud/"
-  },
-  {
-    "keyUrl": "max-martynov",
-    "name": "Max Martynov",
-    "jobTitle": "CTO",
-    "linkedinUrl": null,
-    "date": "20201015",
-    "article_title": "5 Technology Enablers for DataOps",
-    "article_url": "/5-technology-enablers-for-dataops/"
-  },
-  {
-    "keyUrl": "max-martynov",
-    "name": "Max Martynov",
-    "jobTitle": "CTO",
-    "linkedinUrl": null,
-    "date": "20201006",
-    "article_title": "From Data Lake to Analytical Data Platform",
-    "article_url": "/from-data-lake-to-analytical-data-platform/"
-  },
-  {
-    "keyUrl": "max-martynov",
-    "name": "Max Martynov",
-    "jobTitle": "CTO",
-    "linkedinUrl": null,
-    "date": "20201005",
-    "article_title": "When microservices migration doesn\u2019t make sense",
-    "article_url": "/when-microservices-migration-doesnt-make-sense/"
-  },
-  {
-    "keyUrl": "max-martynov",
-    "name": "Max Martynov",
-    "jobTitle": "CTO",
-    "linkedinUrl": null,
-    "date": "20200923",
-    "article_title": "5 strategies to reduce cloud cost",
-    "article_url": "/5-strategies-to-reduce-cloud-cost/"
-  },
-  {
-    "keyUrl": "max-martynov",
-    "name": "Max Martynov",
-    "jobTitle": "CTO",
-    "linkedinUrl": null,
-    "date": "20200916",
-    "article_title": "Avoid the monolithic release process when migrating to microservices",
-    "article_url": "/avoid-the-monolithic-release-process-when-migrating-to-microservices/"
-  },
-  {
-    "keyUrl": "max-martynov",
-    "name": "Max Martynov",
-    "jobTitle": "CTO",
-    "linkedinUrl": null,
-    "date": "20200527",
-    "article_title": "Microservices Platform",
-    "article_url": "/microservices-platform/"
-  },
-  {
-    "keyUrl": "max-martynov",
-    "name": "Max Martynov",
-    "jobTitle": "CTO",
-    "linkedinUrl": null,
-    "date": "20200526",
-    "article_title": "Data Platform: Orchestration, Catalog, and Quality",
-    "article_url": "/data-platform-orchestration-catalog-and-quality/"
-  },
-  {
-    "keyUrl": "max-martynov",
-    "name": "Max Martynov",
-    "jobTitle": "CTO",
-    "linkedinUrl": null,
-    "date": "20200406",
-    "article_title": "A rapid response to COVID-19 \nsupply chain and market shocks: Emerge from the crisis stronger",
-    "article_url": "/rapid-response-to-covid-19-supply-chain-and-market-shocks/"
-  },
-  {
-    "keyUrl": "max-martynov",
-    "name": "Max Martynov",
-    "jobTitle": "CTO",
-    "linkedinUrl": null,
-    "date": "20200203",
-    "article_title": "Unified commerce: Making the most of a true omnichannel experience",
-    "article_url": "/unified-commerce-making-the-most-of-a-true-omnichannel-experience/"
-  },
-  {
-    "keyUrl": "mariia-fedorova",
-    "name": "Mariia Fedorova",
+    "keyUrl": "dmitriy",
+    "name": "Dmitriy Bobkov",
     "jobTitle": null,
     "linkedinUrl": null,
-    "date": "20190904",
-    "article_title": "The next big thing in customer service, a deep learning question-answering system",
-    "article_url": "/the-next-big-thing-in-customer-service-a-deep-learning-question-answering-system/"
+    "date": "20200916",
+    "article_title": "Semantic query parsing blueprint",
+    "article_url": "/semantic-query-parsing-blueprint/"
   },
   {
-    "keyUrl": "mdyuldina",
-    "name": "Maria Dyuldina",
-    "jobTitle": "Saint Petersburg",
-    "linkedinUrl": null,
-    "date": "20200904",
-    "article_title": "Vector space retrieval model for e-commerce",
-    "article_url": "/vs-model-for-ecommerce/"
+    "keyUrl": "anton-ovchinnikov",
+    "name": "Anton Ovchinnikov",
+    "jobTitle": "Data Scientist",
+    "linkedinUrl": "https://www.linkedin.com/in/ovchinnikovanton",
+    "date": "20170110",
+    "article_title": "Chatbots in retail: chatbot technology and architecture advance",
+    "article_url": "/chatbots-in-retail-2017-is-shaping-up-to-be-a-big-year/"
   },
   {
-    "keyUrl": "mdyuldina",
-    "name": "Maria Dyuldina",
-    "jobTitle": "Saint Petersburg",
+    "keyUrl": "anton-ovchinnikov",
+    "name": "Anton Ovchinnikov",
+    "jobTitle": "Data Scientist",
+    "linkedinUrl": "https://www.linkedin.com/in/ovchinnikovanton",
+    "date": "20161202",
+    "article_title": "Visualizing insights with an analytics dashboard",
+    "article_url": "/visualizing-the-insights-with-analytics-dashboard/"
+  },
+  {
+    "keyUrl": "anton-ovchinnikov",
+    "name": "Anton Ovchinnikov",
+    "jobTitle": "Data Scientist",
+    "linkedinUrl": "https://www.linkedin.com/in/ovchinnikovanton",
+    "date": "20161128",
+    "article_title": "Selecting, training, evaluating, and tuning the model",
+    "article_url": "/selecting-training-evaluating-and-tuning-the-model-for-twitter-stream-sentiment-analysis-of-social-movie-review/"
+  },
+  {
+    "keyUrl": "anton-ovchinnikov",
+    "name": "Anton Ovchinnikov",
+    "jobTitle": "Data Scientist",
+    "linkedinUrl": "https://www.linkedin.com/in/ovchinnikovanton",
+    "date": "20161118",
+    "article_title": "Creating training and test data sets and preparing the data",
+    "article_url": "/creating-training-and-test-data-sets-and-preparing-the-data-for-twitter-stream-sentiment-analysis-of-social-movie-reviews/"
+  },
+  {
+    "keyUrl": "anton-ovchinnikov",
+    "name": "Anton Ovchinnikov",
+    "jobTitle": "Data Scientist",
+    "linkedinUrl": "https://www.linkedin.com/in/ovchinnikovanton",
+    "date": "20161111",
+    "article_title": "Constructing a data dictionary for Twitter stream sentiment analysis of social movie reviews",
+    "article_url": "/constructing-a-data-dictionary-for-twitter-stream-sentiment-analysis-of-social-movie-reviews/"
+  },
+  {
+    "keyUrl": "anton-ovchinnikov",
+    "name": "Anton Ovchinnikov",
+    "jobTitle": "Data Scientist",
+    "linkedinUrl": "https://www.linkedin.com/in/ovchinnikovanton",
+    "date": "20161111",
+    "article_title": "Understanding the structure of the data in Twitter streams for sentiment analysis applications",
+    "article_url": "/understanding-the-structure-of-the-data-in-twitter-streams-for-sentiment-analysis-applications/"
+  },
+  {
+    "keyUrl": "anton-ovchinnikov",
+    "name": "Anton Ovchinnikov",
+    "jobTitle": "Data Scientist",
+    "linkedinUrl": "https://www.linkedin.com/in/ovchinnikovanton",
+    "date": "20161110",
+    "article_title": "Using CRISP-DM methodology for Twitter sentiment analysis",
+    "article_url": "/data-scientists-vocabulary-and-scientific-process-applied-to-social-movie-reviews/"
+  },
+  {
+    "keyUrl": "anton-ovchinnikov",
+    "name": "Anton Ovchinnikov",
+    "jobTitle": "Data Scientist",
+    "linkedinUrl": "https://www.linkedin.com/in/ovchinnikovanton",
+    "date": "20161110",
+    "article_title": "The basics of data science with a sentiment analysis example",
+    "article_url": "/lets-use-twitter-stream-sentiment-analysis-of-popular-movies-to-teach-the-rudiments-of-data-science/"
+  },
+  {
+    "keyUrl": "anton-ovchinnikov",
+    "name": "Anton Ovchinnikov",
+    "jobTitle": "Data Scientist",
+    "linkedinUrl": "https://www.linkedin.com/in/ovchinnikovanton",
+    "date": "20161110",
+    "article_title": "From reference architecture to reference implementation: detailing the DevOps aspects of In-Stream Processing Service",
+    "article_url": "/from-reference-architecture-to-reference-implementation-detailing-the-devops-aspects-of-in-stream-processing-service/"
+  },
+  {
+    "keyUrl": "anton-ovchinnikov",
+    "name": "Anton Ovchinnikov",
+    "jobTitle": "Data Scientist",
+    "linkedinUrl": "https://www.linkedin.com/in/ovchinnikovanton",
+    "date": "20160710",
+    "article_title": "In-Stream Processing service blueprint",
+    "article_url": "/in-stream-processing-service-blueprint/"
+  },
+  {
+    "keyUrl": "anton-ovchinnikov",
+    "name": "Anton Ovchinnikov",
+    "jobTitle": "Data Scientist",
+    "linkedinUrl": "https://www.linkedin.com/in/ovchinnikovanton",
+    "date": "20160507",
+    "article_title": "Overview of In-Stream Processing solutions on the market",
+    "article_url": "/overview-of-in-stream-processing-solutions-on-the-market/"
+  },
+  {
+    "keyUrl": "anton-ovchinnikov",
+    "name": "Anton Ovchinnikov",
+    "jobTitle": "Data Scientist",
+    "linkedinUrl": "https://www.linkedin.com/in/ovchinnikovanton",
+    "date": "20160505",
+    "article_title": "How In-Stream Processing works",
+    "article_url": "/how-in-stream-processing-works/"
+  },
+  {
+    "keyUrl": "anton-ovchinnikov",
+    "name": "Anton Ovchinnikov",
+    "jobTitle": "Data Scientist",
+    "linkedinUrl": "https://www.linkedin.com/in/ovchinnikovanton",
+    "date": "20160505",
+    "article_title": "What is In-Stream Processing?",
+    "article_url": "/what-is-in-stream-processing/"
+  },
+  {
+    "keyUrl": "alyanguzov",
+    "name": "Alexey Lyanguzov",
+    "jobTitle": "St. Petersburg",
     "linkedinUrl": null,
-    "date": "20200218",
-    "article_title": "How to replatform Endeca rules to Elasticsearch",
-    "article_url": "/how-to-replatform-endeca-rules-to-elasticsearch/"
+    "date": "20201209",
+    "article_title": "A Universal Approach to eCommerce GUI Test Automation",
+    "article_url": "/a-universal-approach-to-ecommerce-gui-test-automation/"
+  },
+  {
+    "keyUrl": "alyanguzov",
+    "name": "Alexey Lyanguzov",
+    "jobTitle": "St. Petersburg",
+    "linkedinUrl": null,
+    "date": "20201203",
+    "article_title": "How Regular Data Monitoring Creates a Healthy Lifestyle for Your Business",
+    "article_url": "/how-regular-data-monitoring-creates-a-healthy-lifestyle-for-your-business/"
+  },
+  {
+    "keyUrl": "alexander-gaidukov",
+    "name": "Alexander Gaidukov",
+    "jobTitle": null,
+    "linkedinUrl": null,
+    "date": "20201007",
+    "article_title": "iOS Architecture Patterns for Large-Scale Development, part 3: UI architecture approach",
+    "article_url": "/ui-architecture-approach/"
+  },
+  {
+    "keyUrl": "aleksandr",
+    "name": "Aleksandr Vasilev",
+    "jobTitle": "St. Petersburg, Russia",
+    "linkedinUrl": null,
+    "date": "20200303",
+    "article_title": "Tiered machine learned ranking improves relevance for the retail search",
+    "article_url": "/tiered-machine-learning-ranking-improves-relevance-for-the-retail-search/"
+  },
+  {
+    "keyUrl": "aleksandr",
+    "name": "Aleksandr Vasilev",
+    "jobTitle": "St. Petersburg, Russia",
+    "linkedinUrl": null,
+    "date": "20200222",
+    "article_title": "Understanding search query intent with deep learning",
+    "article_url": "/understanding-search-query-intent-with-deep-learning/"
+  },
+  {
+    "keyUrl": "igor",
+    "name": "Igor Kononov",
+    "jobTitle": null,
+    "linkedinUrl": null,
+    "date": "20200924",
+    "article_title": "Open Banking as a Driver of Digital Transformation in the EU Banking Industry",
+    "article_url": "/open-banking-as-a-driver-of-digital-transformation-in-the-eu-banking-industry/"
+  },
+  {
+    "keyUrl": "igor",
+    "name": "Igor Kononov",
+    "jobTitle": null,
+    "linkedinUrl": null,
+    "date": "20200323",
+    "article_title": "WSO2 vs GraphQL: overview and comparison of open source API management products",
+    "article_url": "/wso2-vs-graphql-overview-and-comparison-of-open-source-api-management-products/"
+  },
+  {
+    "keyUrl": "alex-rodin",
+    "name": "Alex Rodin",
+    "jobTitle": "Principal software engineer",
+    "linkedinUrl": null,
+    "date": "20200803",
+    "article_title": "How to use GCP and AWS big data and AI cloud services from Jupyter Notebook",
+    "article_url": "/work-with-google-cloud-and-aws-services-from-jupyter-notebook/"
+  },
+  {
+    "keyUrl": "alex-rodin",
+    "name": "Alex Rodin",
+    "jobTitle": "Principal software engineer",
+    "linkedinUrl": null,
+    "date": "20200715",
+    "article_title": "Add anomaly detection to your data with Grid Dynamics accelerator",
+    "article_url": "/add-anomaly-detection-to-your-data-with-grid-dynamics-accelerator/"
+  },
+  {
+    "keyUrl": "alex-rodin",
+    "name": "Alex Rodin",
+    "jobTitle": "Principal software engineer",
+    "linkedinUrl": null,
+    "date": "20200518",
+    "article_title": "Unsupervised real time anomaly detection",
+    "article_url": "/unsupervised-real-time-anomaly-detection/"
+  },
+  {
+    "keyUrl": "alex-rodin",
+    "name": "Alex Rodin",
+    "jobTitle": "Principal software engineer",
+    "linkedinUrl": null,
+    "date": "20190308",
+    "article_title": "Safety stock optimization for Ship-from-Store",
+    "article_url": "/safety-stock-optimization-for-ship-from-store/"
+  },
+  {
+    "keyUrl": "alex-rodin",
+    "name": "Alex Rodin",
+    "jobTitle": "Principal software engineer",
+    "linkedinUrl": null,
+    "date": "20180807",
+    "article_title": "Predictive analytics for promotion and price optimization",
+    "article_url": "/predictive-analytics-for-promotion-and-price-optimization/"
+  },
+  {
+    "keyUrl": "aleksey-romanov",
+    "name": "Aleksey Romanov",
+    "jobTitle": null,
+    "linkedinUrl": null,
+    "date": "20200222",
+    "article_title": "Understanding search query intent with deep learning",
+    "article_url": "/understanding-search-query-intent-with-deep-learning/"
+  },
+  {
+    "keyUrl": "aleksey-romanov",
+    "name": "Aleksey Romanov",
+    "jobTitle": null,
+    "linkedinUrl": null,
+    "date": "20190925",
+    "article_title": "How deep learning improves recommendations for 80% of your catalog",
+    "article_url": "/how-deep-learning-improves-recommendations-for-your-catalog/"
+  },
+  {
+    "keyUrl": "ezraberger",
+    "name": "Ezra Berger",
+    "jobTitle": null,
+    "linkedinUrl": null,
+    "date": "20200121",
+    "article_title": "Delivering digital transformation: \nWhy automation and creating a high-performance engineering culture are vital to digital success",
+    "article_url": "/why-automation-and-a-high-performance-engineering-culture-ensure-digital-success/"
+  },
+  {
+    "keyUrl": "ezraberger",
+    "name": "Ezra Berger",
+    "jobTitle": null,
+    "linkedinUrl": null,
+    "date": "20200116",
+    "article_title": "ATG\u2019s black box blocking your e-commerce view? Replatform with microservices",
+    "article_url": "/atgs-black-box-blocking-your-e-commerce-view/"
+  },
+  {
+    "keyUrl": "ezraberger",
+    "name": "Ezra Berger",
+    "jobTitle": null,
+    "linkedinUrl": null,
+    "date": "20191230",
+    "article_title": "Digital transformation requires new technology partnerships and Agile co-innovation",
+    "article_url": "/digital-transformation-requires-new-technology-partnerships-and-agile-co-innovation/"
+  },
+  {
+    "keyUrl": "ezraberger",
+    "name": "Ezra Berger",
+    "jobTitle": null,
+    "linkedinUrl": null,
+    "date": "20191113",
+    "article_title": "What is computer vision and what can it do?",
+    "article_url": "/what-is-computer-vision-and-what-can-it-do/"
+  },
+  {
+    "keyUrl": "ezraberger",
+    "name": "Ezra Berger",
+    "jobTitle": null,
+    "linkedinUrl": null,
+    "date": "20191031",
+    "article_title": "What computer vision services, platforms & solutions are on the market",
+    "article_url": "/what-computer-vision-services-platforms-and-solutions-are-on-the-market/"
+  },
+  {
+    "keyUrl": "ezraberger",
+    "name": "Ezra Berger",
+    "jobTitle": null,
+    "linkedinUrl": null,
+    "date": "20191017",
+    "article_title": "10 ways computer vision is transforming digital retail",
+    "article_url": "/computer-vision-is-transforming-digital-retail/"
   },
   {
     "keyUrl": "yaroslav-basovskyy",
@@ -342,87 +405,6 @@
     "article_url": "/developing-real-time-applications-on-aws-elb-without-websocket/"
   },
   {
-    "keyUrl": "maksym-usichenko",
-    "name": "Maksym Usichenko",
-    "jobTitle": "Delivery Manager",
-    "linkedinUrl": null,
-    "date": "20181003",
-    "article_title": "Yes, you can have it both ways: in-sprint QE automation improves code and accelerates development speed",
-    "article_url": "/how-in-sprint-qe-automation-improves-accelerates-development/"
-  },
-  {
-    "keyUrl": "lilia",
-    "name": "Lilia Urmazova",
-    "jobTitle": null,
-    "linkedinUrl": null,
-    "date": "20201209",
-    "article_title": "A Universal Approach to eCommerce GUI Test Automation",
-    "article_url": "/a-universal-approach-to-ecommerce-gui-test-automation/"
-  },
-  {
-    "keyUrl": "kirill-evstigneev",
-    "name": "Kirill Evstigneev",
-    "jobTitle": null,
-    "linkedinUrl": null,
-    "date": "20201117",
-    "article_title": "Istio Service Mesh Beyond Kubernetes",
-    "article_url": "/istio-service-mesh-beyond-kubernetes/"
-  },
-  {
-    "keyUrl": "kirill-evstigneev",
-    "name": "Kirill Evstigneev",
-    "jobTitle": null,
-    "linkedinUrl": null,
-    "date": "20201029",
-    "article_title": "How to Release Components Independently when you have a Distributed Monolith",
-    "article_url": "/how-to-release-components-independently-if-what-you-have-is-a-distributed-monolith/"
-  },
-  {
-    "keyUrl": "kirill-evstigneev",
-    "name": "Kirill Evstigneev",
-    "jobTitle": null,
-    "linkedinUrl": null,
-    "date": "20201013",
-    "article_title": "CI/CD challenges of 2020",
-    "article_url": "/ci-cd-challenges-of-2020/"
-  },
-  {
-    "keyUrl": "kirill-evstigneev",
-    "name": "Kirill Evstigneev",
-    "jobTitle": null,
-    "linkedinUrl": null,
-    "date": "20201005",
-    "article_title": "When microservices migration doesn\u2019t make sense",
-    "article_url": "/when-microservices-migration-doesnt-make-sense/"
-  },
-  {
-    "keyUrl": "kirill-evstigneev",
-    "name": "Kirill Evstigneev",
-    "jobTitle": null,
-    "linkedinUrl": null,
-    "date": "20200923",
-    "article_title": "5 strategies to reduce cloud cost",
-    "article_url": "/5-strategies-to-reduce-cloud-cost/"
-  },
-  {
-    "keyUrl": "kirill-evstigneev",
-    "name": "Kirill Evstigneev",
-    "jobTitle": null,
-    "linkedinUrl": null,
-    "date": "20200916",
-    "article_title": "Avoid the monolithic release process when migrating to microservices",
-    "article_url": "/avoid-the-monolithic-release-process-when-migrating-to-microservices/"
-  },
-  {
-    "keyUrl": "kirill",
-    "name": "Kirill Arshuk-Popov",
-    "jobTitle": null,
-    "linkedinUrl": null,
-    "date": "20200427",
-    "article_title": "Progressive Web Apps: Comparison of PWA with Other Approaches to Build Mobile User Experience",
-    "article_url": "/pwa-research/"
-  },
-  {
     "keyUrl": "yakov-sirotkin",
     "name": "Yakov Sirotkin",
     "jobTitle": "Software Engineer",
@@ -430,24 +412,6 @@
     "date": "20170627",
     "article_title": "How to use suffix arrays to combat common limitations of full-text search",
     "article_url": "/using-suffix-arrays-to-fix-limitations-of-full-text-search/"
-  },
-  {
-    "keyUrl": "konstantin-perikov",
-    "name": "Konstantin Perikov",
-    "jobTitle": "Software Engineer",
-    "linkedinUrl": null,
-    "date": "20170627",
-    "article_title": "How to use suffix arrays to combat common limitations of full-text search",
-    "article_url": "/using-suffix-arrays-to-fix-limitations-of-full-text-search/"
-  },
-  {
-    "keyUrl": "konstantin-perikov",
-    "name": "Konstantin Perikov",
-    "jobTitle": "Software Engineer",
-    "linkedinUrl": null,
-    "date": "20170222",
-    "article_title": "Implementing autocomplete with Solr",
-    "article_url": "/implementing-autocomplete-with-solr/"
   },
   {
     "keyUrl": "vladislav-trofimov",
@@ -459,13 +423,22 @@
     "article_url": "/implement-autocomplete-search-for-large-e-commerce-catalogs/"
   },
   {
-    "keyUrl": "vitalii-ruban",
-    "name": "Vitalii Ruban",
-    "jobTitle": null,
+    "keyUrl": "vladislav-isaev",
+    "name": "Vladislav Isaev",
+    "jobTitle": "Search Developer in Engineering: Search",
     "linkedinUrl": null,
-    "date": "20190522",
-    "article_title": "Take your apps to the next level with 3D augmented reality",
-    "article_url": "/latest-arcore-and-sceneform-features-take-creation-of-ar-apps-to-the-next-level/"
+    "date": "20190227",
+    "article_title": "Identifying screws, a practical case study for visual search",
+    "article_url": "/identifying-screws-a-practical-use-case-study-for-visual-search/"
+  },
+  {
+    "keyUrl": "vladislav-isaev",
+    "name": "Vladislav Isaev",
+    "jobTitle": "Search Developer in Engineering: Search",
+    "linkedinUrl": null,
+    "date": "20180417",
+    "article_title": "Building a reverse image search engine with convolutional neural networks",
+    "article_url": "/reverse-image-search-with-convolutional-neural-networks/"
   },
   {
     "keyUrl": "vladimir",
@@ -504,6 +477,51 @@
     "article_url": "/blockchain-technology-use-cases-in-retail/"
   },
   {
+    "keyUrl": "vitalii-ruban",
+    "name": "Vitalii Ruban",
+    "jobTitle": null,
+    "linkedinUrl": null,
+    "date": "20190522",
+    "article_title": "Take your apps to the next level with 3D augmented reality",
+    "article_url": "/latest-arcore-and-sceneform-features-take-creation-of-ar-apps-to-the-next-level/"
+  },
+  {
+    "keyUrl": "victor-samoylov",
+    "name": "Victor Samoylov",
+    "jobTitle": "Senior Director of Business Systems",
+    "linkedinUrl": "https://www.linkedin.com/in/victor-samoylov-65b3b61",
+    "date": "20161011",
+    "article_title": "Six design principles of Continuous Performance Testing",
+    "article_url": "/six-design-principles-of-continuous-performance-testing/"
+  },
+  {
+    "keyUrl": "victor-samoylov",
+    "name": "Victor Samoylov",
+    "jobTitle": "Senior Director of Business Systems",
+    "linkedinUrl": "https://www.linkedin.com/in/victor-samoylov-65b3b61",
+    "date": "20160921",
+    "article_title": "How to extend CI pipelines with Continuous Performance Testing",
+    "article_url": "/how-to-extend-continuous-integration-ci-pipelines-with-continuous-performance-testing-cpt/"
+  },
+  {
+    "keyUrl": "victor-samoylov",
+    "name": "Victor Samoylov",
+    "jobTitle": "Senior Director of Business Systems",
+    "linkedinUrl": "https://www.linkedin.com/in/victor-samoylov-65b3b61",
+    "date": "20160905",
+    "article_title": "Challenges of Continuous Performance Testing",
+    "article_url": "/why-isnt-continous-performance-testing-more-common/"
+  },
+  {
+    "keyUrl": "victor-samoylov",
+    "name": "Victor Samoylov",
+    "jobTitle": "Senior Director of Business Systems",
+    "linkedinUrl": "https://www.linkedin.com/in/victor-samoylov-65b3b61",
+    "date": "20160726",
+    "article_title": "What is Continuous Performance Testing and why it is needed",
+    "article_url": "/what-is-continuous-performance-testing-and-why-it-is-needed/"
+  },
+  {
     "keyUrl": "vladimir-katson",
     "name": "Vladimir Katson",
     "jobTitle": "Technical Architect",
@@ -511,6 +529,15 @@
     "date": "20190604",
     "article_title": "Order history search: a fast and efficient approach",
     "article_url": "/a-fast-and-efficient-approach-to-searching-order-history/"
+  },
+  {
+    "keyUrl": "victor-chistyakov",
+    "name": "Victor Chistyakov",
+    "jobTitle": "Staff Software Engineer in Kharkov",
+    "linkedinUrl": null,
+    "date": "20180222",
+    "article_title": "How to build a DIY Magic Mirror out of commodity hardware and augmented reality APIs",
+    "article_url": "/build-diy-magic-mirror-out-of-commodity-hardware-and-ar-tech/"
   },
   {
     "keyUrl": "victoria-livschitz",
@@ -648,58 +675,13 @@
     "article_url": "/from-reference-architecture-to-reference-implementation-detailing-the-devops-aspects-of-in-stream-processing-service/"
   },
   {
-    "keyUrl": "victor-samoylov",
-    "name": "Victor Samoylov",
-    "jobTitle": "Senior Director of Business Systems",
-    "linkedinUrl": "https://www.linkedin.com/in/victor-samoylov-65b3b61",
-    "date": "20161011",
-    "article_title": "Six design principles of Continuous Performance Testing",
-    "article_url": "/six-design-principles-of-continuous-performance-testing/"
-  },
-  {
-    "keyUrl": "victor-samoylov",
-    "name": "Victor Samoylov",
-    "jobTitle": "Senior Director of Business Systems",
-    "linkedinUrl": "https://www.linkedin.com/in/victor-samoylov-65b3b61",
-    "date": "20160921",
-    "article_title": "How to extend CI pipelines with Continuous Performance Testing",
-    "article_url": "/how-to-extend-continuous-integration-ci-pipelines-with-continuous-performance-testing-cpt/"
-  },
-  {
-    "keyUrl": "victor-samoylov",
-    "name": "Victor Samoylov",
-    "jobTitle": "Senior Director of Business Systems",
-    "linkedinUrl": "https://www.linkedin.com/in/victor-samoylov-65b3b61",
-    "date": "20160905",
-    "article_title": "Challenges of Continuous Performance Testing",
-    "article_url": "/why-isnt-continous-performance-testing-more-common/"
-  },
-  {
-    "keyUrl": "victor-samoylov",
-    "name": "Victor Samoylov",
-    "jobTitle": "Senior Director of Business Systems",
-    "linkedinUrl": "https://www.linkedin.com/in/victor-samoylov-65b3b61",
-    "date": "20160726",
-    "article_title": "What is Continuous Performance Testing and why it is needed",
-    "article_url": "/what-is-continuous-performance-testing-and-why-it-is-needed/"
-  },
-  {
-    "keyUrl": "vladislav-isaev",
-    "name": "Vladislav Isaev",
-    "jobTitle": "Search Developer in Engineering: Search",
+    "keyUrl": "timofey-durakov",
+    "name": "Timofey Durakov",
+    "jobTitle": "Staff Data Scientist in Engineering: Machine Learning",
     "linkedinUrl": null,
-    "date": "20190227",
-    "article_title": "Identifying screws, a practical case study for visual search",
-    "article_url": "/identifying-screws-a-practical-use-case-study-for-visual-search/"
-  },
-  {
-    "keyUrl": "vladislav-isaev",
-    "name": "Vladislav Isaev",
-    "jobTitle": "Search Developer in Engineering: Search",
-    "linkedinUrl": null,
-    "date": "20180417",
-    "article_title": "Building a reverse image search engine with convolutional neural networks",
-    "article_url": "/reverse-image-search-with-convolutional-neural-networks/"
+    "date": "20180530",
+    "article_title": "Expanding product discovery with ML-powered image similarity search",
+    "article_url": "/expanding-product-search-with-image-similarity/"
   },
   {
     "keyUrl": "ss",
@@ -709,78 +691,6 @@
     "date": "20200904",
     "article_title": "Vector space retrieval model for e-commerce",
     "article_url": "/vs-model-for-ecommerce/"
-  },
-  {
-    "keyUrl": "sergey-parakhin",
-    "name": "Sergey Parakhin",
-    "jobTitle": null,
-    "linkedinUrl": null,
-    "date": "20201015",
-    "article_title": "Finding a needle in a haystack: \nbuilding a question answering system for online store",
-    "article_url": "/question-answering-system-using-bert/"
-  },
-  {
-    "keyUrl": "sergey-parakhin",
-    "name": "Sergey Parakhin",
-    "jobTitle": null,
-    "linkedinUrl": null,
-    "date": "20191105",
-    "article_title": "How we built a conversational AI for ordering flowers over Amazon Alexa or Google Home",
-    "article_url": "/how-we-built-a-conversational-ai-for-ordering-flowers/"
-  },
-  {
-    "keyUrl": "victor-chistyakov",
-    "name": "Victor Chistyakov",
-    "jobTitle": "Staff Software Engineer in Kharkov",
-    "linkedinUrl": null,
-    "date": "20180222",
-    "article_title": "How to build a DIY Magic Mirror out of commodity hardware and augmented reality APIs",
-    "article_url": "/build-diy-magic-mirror-out-of-commodity-hardware-and-ar-tech/"
-  },
-  {
-    "keyUrl": "sergey-tryuber",
-    "name": "Sergey Tryuber",
-    "jobTitle": "Technical Director, Big Data",
-    "linkedinUrl": "https://ru.linkedin.com/in/stryuber",
-    "date": "20160710",
-    "article_title": "In-Stream Processing service blueprint",
-    "article_url": "/in-stream-processing-service-blueprint/"
-  },
-  {
-    "keyUrl": "sergey-tryuber",
-    "name": "Sergey Tryuber",
-    "jobTitle": "Technical Director, Big Data",
-    "linkedinUrl": "https://ru.linkedin.com/in/stryuber",
-    "date": "20160507",
-    "article_title": "Overview of In-Stream Processing solutions on the market",
-    "article_url": "/overview-of-in-stream-processing-solutions-on-the-market/"
-  },
-  {
-    "keyUrl": "sergey-tryuber",
-    "name": "Sergey Tryuber",
-    "jobTitle": "Technical Director, Big Data",
-    "linkedinUrl": "https://ru.linkedin.com/in/stryuber",
-    "date": "20160505",
-    "article_title": "How In-Stream Processing works",
-    "article_url": "/how-in-stream-processing-works/"
-  },
-  {
-    "keyUrl": "sergey-tryuber",
-    "name": "Sergey Tryuber",
-    "jobTitle": "Technical Director, Big Data",
-    "linkedinUrl": "https://ru.linkedin.com/in/stryuber",
-    "date": "20160505",
-    "article_title": "What is In-Stream Processing?",
-    "article_url": "/what-is-in-stream-processing/"
-  },
-  {
-    "keyUrl": "timofey-durakov",
-    "name": "Timofey Durakov",
-    "jobTitle": "Staff Data Scientist in Engineering: Machine Learning",
-    "linkedinUrl": null,
-    "date": "20180530",
-    "article_title": "Expanding product discovery with ML-powered image similarity search",
-    "article_url": "/expanding-product-search-with-image-similarity/"
   },
   {
     "keyUrl": "stanislav",
@@ -837,22 +747,40 @@
     "article_url": "/from-reference-architecture-to-reference-implementation-detailing-the-devops-aspects-of-in-stream-processing-service/"
   },
   {
-    "keyUrl": "osmirnov",
-    "name": "Oleg Smirnov",
-    "jobTitle": null,
-    "linkedinUrl": null,
-    "date": "20201015",
-    "article_title": "Finding a needle in a haystack: \nbuilding a question answering system for online store",
-    "article_url": "/question-answering-system-using-bert/"
+    "keyUrl": "sergey-tryuber",
+    "name": "Sergey Tryuber",
+    "jobTitle": "Technical Director, Big Data",
+    "linkedinUrl": "https://ru.linkedin.com/in/stryuber",
+    "date": "20160710",
+    "article_title": "In-Stream Processing service blueprint",
+    "article_url": "/in-stream-processing-service-blueprint/"
   },
   {
-    "keyUrl": "sergey-novikov",
-    "name": "Sergey Novikov",
-    "jobTitle": "Senior UI Engineer",
-    "linkedinUrl": null,
-    "date": "20171010",
-    "article_title": "18 ways to foster success in responsive web UI projects",
-    "article_url": "/18-ways-to-foster-success-in-responsive-web-ui-projects/"
+    "keyUrl": "sergey-tryuber",
+    "name": "Sergey Tryuber",
+    "jobTitle": "Technical Director, Big Data",
+    "linkedinUrl": "https://ru.linkedin.com/in/stryuber",
+    "date": "20160507",
+    "article_title": "Overview of In-Stream Processing solutions on the market",
+    "article_url": "/overview-of-in-stream-processing-solutions-on-the-market/"
+  },
+  {
+    "keyUrl": "sergey-tryuber",
+    "name": "Sergey Tryuber",
+    "jobTitle": "Technical Director, Big Data",
+    "linkedinUrl": "https://ru.linkedin.com/in/stryuber",
+    "date": "20160505",
+    "article_title": "How In-Stream Processing works",
+    "article_url": "/how-in-stream-processing-works/"
+  },
+  {
+    "keyUrl": "sergey-tryuber",
+    "name": "Sergey Tryuber",
+    "jobTitle": "Technical Director, Big Data",
+    "linkedinUrl": "https://ru.linkedin.com/in/stryuber",
+    "date": "20160505",
+    "article_title": "What is In-Stream Processing?",
+    "article_url": "/what-is-in-stream-processing/"
   },
   {
     "keyUrl": "sergei-parshev",
@@ -873,6 +801,78 @@
     "article_url": "/guide-to-practical-unit-testing-for-ios-applications/"
   },
   {
+    "keyUrl": "oleg-savrasov",
+    "name": "Oleg Savrasov",
+    "jobTitle": "Senior Software Engineer",
+    "linkedinUrl": "https://www.linkedin.com/in/oleg-savrasov-8816513",
+    "date": "20180814",
+    "article_title": "How to implement multi-select faceting for nested documents in Solr",
+    "article_url": "/multi-select-faceting-for-nested-documents-in-solr/"
+  },
+  {
+    "keyUrl": "oleg-savrasov",
+    "name": "Oleg Savrasov",
+    "jobTitle": "Senior Software Engineer",
+    "linkedinUrl": "https://www.linkedin.com/in/oleg-savrasov-8816513",
+    "date": "20160809",
+    "article_title": "How to implement Block Join Faceting in Solr/Lucene",
+    "article_url": "/how-to-implement-block-join-faceting-in-solr-lucene/"
+  },
+  {
+    "keyUrl": "oleg-savrasov",
+    "name": "Oleg Savrasov",
+    "jobTitle": "Senior Software Engineer",
+    "linkedinUrl": "https://www.linkedin.com/in/oleg-savrasov-8816513",
+    "date": "20160720",
+    "article_title": "Introduction to Block Join Faceting in Solr",
+    "article_url": "/introduction-to-block-join-faceting-in-solr/"
+  },
+  {
+    "keyUrl": "sergey-parakhin",
+    "name": "Sergey Parakhin",
+    "jobTitle": null,
+    "linkedinUrl": null,
+    "date": "20201015",
+    "article_title": "Finding a needle in a haystack: \nbuilding a question answering system for online store",
+    "article_url": "/question-answering-system-using-bert/"
+  },
+  {
+    "keyUrl": "sergey-parakhin",
+    "name": "Sergey Parakhin",
+    "jobTitle": null,
+    "linkedinUrl": null,
+    "date": "20191105",
+    "article_title": "How we built a conversational AI for ordering flowers over Amazon Alexa or Google Home",
+    "article_url": "/how-we-built-a-conversational-ai-for-ordering-flowers/"
+  },
+  {
+    "keyUrl": "nina-pakhomova",
+    "name": "Nina Pakhomova",
+    "jobTitle": "Senior Software Engineer",
+    "linkedinUrl": "https://www.linkedin.com/in/nina-pakhomova-gracheva-bardashova-62109816/",
+    "date": "20170629",
+    "article_title": "Creating an image similarity function with TensorFlow and its application in e-commerce",
+    "article_url": "/create-image-similarity-function-with-tensorflow-for-retail/"
+  },
+  {
+    "keyUrl": "nina-pakhomova",
+    "name": "Nina Pakhomova",
+    "jobTitle": "Senior Software Engineer",
+    "linkedinUrl": "https://www.linkedin.com/in/nina-pakhomova-gracheva-bardashova-62109816/",
+    "date": "20170622",
+    "article_title": "Detecting and correcting e-commerce catalog misattribution with image and text classification using Google TensorFlow",
+    "article_url": "/fix-e-commerce-attribution-with-tensorflow-and-image-recognition/"
+  },
+  {
+    "keyUrl": "nina-pakhomova",
+    "name": "Nina Pakhomova",
+    "jobTitle": "Senior Software Engineer",
+    "linkedinUrl": "https://www.linkedin.com/in/nina-pakhomova-gracheva-bardashova-62109816/",
+    "date": "20170620",
+    "article_title": "How Machine Learning can address attribution issues in e-commerce catalogs",
+    "article_url": "/how-machine-learning-can-fix-ecommerce-catalogs-attribution-issues/"
+  },
+  {
     "keyUrl": "oleksandr",
     "name": "Oleksandr Korniiets",
     "jobTitle": null,
@@ -880,6 +880,402 @@
     "date": "20200928",
     "article_title": "iOS Architecture Patterns for Large-Scale Development, part 2: Dependency management",
     "article_url": "/dependency-management/"
+  },
+  {
+    "keyUrl": "osmirnov",
+    "name": "Oleg Smirnov",
+    "jobTitle": null,
+    "linkedinUrl": null,
+    "date": "20201015",
+    "article_title": "Finding a needle in a haystack: \nbuilding a question answering system for online store",
+    "article_url": "/question-answering-system-using-bert/"
+  },
+  {
+    "keyUrl": "sergey-novikov",
+    "name": "Sergey Novikov",
+    "jobTitle": "Senior UI Engineer",
+    "linkedinUrl": null,
+    "date": "20171010",
+    "article_title": "18 ways to foster success in responsive web UI projects",
+    "article_url": "/18-ways-to-foster-success-in-responsive-web-ui-projects/"
+  },
+  {
+    "keyUrl": "mikhail-khludnev",
+    "name": "Mikhail Khludnev",
+    "jobTitle": "Principal Engineer",
+    "linkedinUrl": null,
+    "date": "20160831",
+    "article_title": "A Frustrating Personal Experience with Unfaceted Search",
+    "article_url": "/a-frustrating-personal-experience-with-unfaceted-search/"
+  },
+  {
+    "keyUrl": "mikhail-khludnev",
+    "name": "Mikhail Khludnev",
+    "jobTitle": "Principal Engineer",
+    "linkedinUrl": null,
+    "date": "20160826",
+    "article_title": "Searching grandchildren and siblings with Solr Block Join",
+    "article_url": "/searching-grandchildren-and-siblings-with-solr-block-join/"
+  },
+  {
+    "keyUrl": "mikhail-khludnev",
+    "name": "Mikhail Khludnev",
+    "jobTitle": "Principal Engineer",
+    "linkedinUrl": null,
+    "date": "20160816",
+    "article_title": "The segmented filter cache and Block Join Query Parser in Solr",
+    "article_url": "/segmented-filter-cache-and-block-join-query-parser-in-solr/"
+  },
+  {
+    "keyUrl": "mikhail-khludnev",
+    "name": "Mikhail Khludnev",
+    "jobTitle": "Principal Engineer",
+    "linkedinUrl": null,
+    "date": "20160810",
+    "article_title": "How to use Block Join to improve search efficiency with nested documents in Solr",
+    "article_url": "/how-to-use-block-join-to-improve-search-efficiency-with-nested-documents-in-solr/"
+  },
+  {
+    "keyUrl": "mikhail-khludnev",
+    "name": "Mikhail Khludnev",
+    "jobTitle": "Principal Engineer",
+    "linkedinUrl": null,
+    "date": "20160721",
+    "article_title": "High-performance Join in Solr with BlockJoinQuery",
+    "article_url": "/high-performance-join-in-solr-with-blockjoinquery/"
+  },
+  {
+    "keyUrl": "michael-ionkin",
+    "name": "Michael Ionkin",
+    "jobTitle": null,
+    "linkedinUrl": null,
+    "date": "20200715",
+    "article_title": "Add anomaly detection to your data with Grid Dynamics accelerator",
+    "article_url": "/add-anomaly-detection-to-your-data-with-grid-dynamics-accelerator/"
+  },
+  {
+    "keyUrl": "mariia-fedorova",
+    "name": "Mariia Fedorova",
+    "jobTitle": null,
+    "linkedinUrl": null,
+    "date": "20190904",
+    "article_title": "The next big thing in customer service, a deep learning question-answering system",
+    "article_url": "/the-next-big-thing-in-customer-service-a-deep-learning-question-answering-system/"
+  },
+  {
+    "keyUrl": "mdyuldina",
+    "name": "Maria Dyuldina",
+    "jobTitle": "Saint Petersburg",
+    "linkedinUrl": null,
+    "date": "20200904",
+    "article_title": "Vector space retrieval model for e-commerce",
+    "article_url": "/vs-model-for-ecommerce/"
+  },
+  {
+    "keyUrl": "mdyuldina",
+    "name": "Maria Dyuldina",
+    "jobTitle": "Saint Petersburg",
+    "linkedinUrl": null,
+    "date": "20200218",
+    "article_title": "How to replatform Endeca rules to Elasticsearch",
+    "article_url": "/how-to-replatform-endeca-rules-to-elasticsearch/"
+  },
+  {
+    "keyUrl": "nikolay-khokhlienkov",
+    "name": "Nikolay Khokhlienkov",
+    "jobTitle": "Technical Director",
+    "linkedinUrl": null,
+    "date": "20170323",
+    "article_title": "Using geofence marketing & Bluetooth beacons to improve offline sales",
+    "article_url": "/using-bluetooth-low-energy-beacons-and-geofencing-to-build-brick-and-mortar-store-sales/"
+  },
+  {
+    "keyUrl": "mikhail-klokov",
+    "name": "Mikhail Klokov",
+    "jobTitle": "Development Manager",
+    "linkedinUrl": null,
+    "date": "20171004",
+    "article_title": "Continuous Performance Testing (CPT) with Jagger",
+    "article_url": "/continuous-performance-testing-cpt-with-jagger/"
+  },
+  {
+    "keyUrl": "mikhail-klokov",
+    "name": "Mikhail Klokov",
+    "jobTitle": "Development Manager",
+    "linkedinUrl": null,
+    "date": "20161011",
+    "article_title": "Six design principles of Continuous Performance Testing",
+    "article_url": "/six-design-principles-of-continuous-performance-testing/"
+  },
+  {
+    "keyUrl": "mikhail-klokov",
+    "name": "Mikhail Klokov",
+    "jobTitle": "Development Manager",
+    "linkedinUrl": null,
+    "date": "20160921",
+    "article_title": "How to extend CI pipelines with Continuous Performance Testing",
+    "article_url": "/how-to-extend-continuous-integration-ci-pipelines-with-continuous-performance-testing-cpt/"
+  },
+  {
+    "keyUrl": "mikhail-klokov",
+    "name": "Mikhail Klokov",
+    "jobTitle": "Development Manager",
+    "linkedinUrl": null,
+    "date": "20160905",
+    "article_title": "Challenges of Continuous Performance Testing",
+    "article_url": "/why-isnt-continous-performance-testing-more-common/"
+  },
+  {
+    "keyUrl": "max-martynov",
+    "name": "Max Martynov",
+    "jobTitle": "CTO",
+    "linkedinUrl": null,
+    "date": "20201214",
+    "article_title": "Digital Customer Experience: A Path to Profitable Growth",
+    "article_url": "/digital-customer-experience-a-path-to-profitable-growth/"
+  },
+  {
+    "keyUrl": "max-martynov",
+    "name": "Max Martynov",
+    "jobTitle": "CTO",
+    "linkedinUrl": null,
+    "date": "20201214",
+    "article_title": "Dynamic Talks | Data Science",
+    "article_url": "/dynamic-talks-data-science/"
+  },
+  {
+    "keyUrl": "max-martynov",
+    "name": "Max Martynov",
+    "jobTitle": "CTO",
+    "linkedinUrl": null,
+    "date": "20201214",
+    "article_title": "Industrial label recognition",
+    "article_url": "/industrial-label-recognition/"
+  },
+  {
+    "keyUrl": "max-martynov",
+    "name": "Max Martynov",
+    "jobTitle": "CTO",
+    "linkedinUrl": null,
+    "date": "20201214",
+    "article_title": "Auto ML: Fruits and Vegetables Recognition",
+    "article_url": "/auto-ml-fruits-and-vegetables-recognition/"
+  },
+  {
+    "keyUrl": "max-martynov",
+    "name": "Max Martynov",
+    "jobTitle": "CTO",
+    "linkedinUrl": null,
+    "date": "20201029",
+    "article_title": "How to Release Components Independently when you have a Distributed Monolith",
+    "article_url": "/how-to-release-components-independently-if-what-you-have-is-a-distributed-monolith/"
+  },
+  {
+    "keyUrl": "max-martynov",
+    "name": "Max Martynov",
+    "jobTitle": "CTO",
+    "linkedinUrl": null,
+    "date": "20201020",
+    "article_title": "Turn Data Into Insights Faster With Grid Dynamics Analytical Data Platform Accelerator on AWS Cloud",
+    "article_url": "/turn-data-into-insights-faster-with-grid-dynamics-analytical-data-platform-accelerator-on-aws-cloud/"
+  },
+  {
+    "keyUrl": "max-martynov",
+    "name": "Max Martynov",
+    "jobTitle": "CTO",
+    "linkedinUrl": null,
+    "date": "20201015",
+    "article_title": "5 Technology Enablers for DataOps",
+    "article_url": "/5-technology-enablers-for-dataops/"
+  },
+  {
+    "keyUrl": "max-martynov",
+    "name": "Max Martynov",
+    "jobTitle": "CTO",
+    "linkedinUrl": null,
+    "date": "20201006",
+    "article_title": "From Data Lake to Analytical Data Platform",
+    "article_url": "/from-data-lake-to-analytical-data-platform/"
+  },
+  {
+    "keyUrl": "max-martynov",
+    "name": "Max Martynov",
+    "jobTitle": "CTO",
+    "linkedinUrl": null,
+    "date": "20201005",
+    "article_title": "When microservices migration doesn\u2019t make sense",
+    "article_url": "/when-microservices-migration-doesnt-make-sense/"
+  },
+  {
+    "keyUrl": "max-martynov",
+    "name": "Max Martynov",
+    "jobTitle": "CTO",
+    "linkedinUrl": null,
+    "date": "20200923",
+    "article_title": "5 strategies to reduce cloud cost",
+    "article_url": "/5-strategies-to-reduce-cloud-cost/"
+  },
+  {
+    "keyUrl": "max-martynov",
+    "name": "Max Martynov",
+    "jobTitle": "CTO",
+    "linkedinUrl": null,
+    "date": "20200916",
+    "article_title": "Avoid the monolithic release process when migrating to microservices",
+    "article_url": "/avoid-the-monolithic-release-process-when-migrating-to-microservices/"
+  },
+  {
+    "keyUrl": "max-martynov",
+    "name": "Max Martynov",
+    "jobTitle": "CTO",
+    "linkedinUrl": null,
+    "date": "20200527",
+    "article_title": "Microservices Platform",
+    "article_url": "/microservices-platform/"
+  },
+  {
+    "keyUrl": "max-martynov",
+    "name": "Max Martynov",
+    "jobTitle": "CTO",
+    "linkedinUrl": null,
+    "date": "20200526",
+    "article_title": "Data Platform: Orchestration, Catalog, and Quality",
+    "article_url": "/data-platform-orchestration-catalog-and-quality/"
+  },
+  {
+    "keyUrl": "max-martynov",
+    "name": "Max Martynov",
+    "jobTitle": "CTO",
+    "linkedinUrl": null,
+    "date": "20200406",
+    "article_title": "A rapid response to COVID-19 \nsupply chain and market shocks: Emerge from the crisis stronger",
+    "article_url": "/rapid-response-to-covid-19-supply-chain-and-market-shocks/"
+  },
+  {
+    "keyUrl": "max-martynov",
+    "name": "Max Martynov",
+    "jobTitle": "CTO",
+    "linkedinUrl": null,
+    "date": "20200203",
+    "article_title": "Unified commerce: Making the most of a true omnichannel experience",
+    "article_url": "/unified-commerce-making-the-most-of-a-true-omnichannel-experience/"
+  },
+  {
+    "keyUrl": "nikita",
+    "name": "Nikita Kotov",
+    "jobTitle": null,
+    "linkedinUrl": null,
+    "date": "20200630",
+    "article_title": "Which Enterprise Data Warehouse performs better for your workloads?",
+    "article_url": "/edw-performance-comparison/"
+  },
+  {
+    "keyUrl": "lilia",
+    "name": "Lilia Urmazova",
+    "jobTitle": null,
+    "linkedinUrl": null,
+    "date": "20201209",
+    "article_title": "A Universal Approach to eCommerce GUI Test Automation",
+    "article_url": "/a-universal-approach-to-ecommerce-gui-test-automation/"
+  },
+  {
+    "keyUrl": "konstantin-perikov",
+    "name": "Konstantin Perikov",
+    "jobTitle": "Software Engineer",
+    "linkedinUrl": null,
+    "date": "20170627",
+    "article_title": "How to use suffix arrays to combat common limitations of full-text search",
+    "article_url": "/using-suffix-arrays-to-fix-limitations-of-full-text-search/"
+  },
+  {
+    "keyUrl": "konstantin-perikov",
+    "name": "Konstantin Perikov",
+    "jobTitle": "Software Engineer",
+    "linkedinUrl": null,
+    "date": "20170222",
+    "article_title": "Implementing autocomplete with Solr",
+    "article_url": "/implementing-autocomplete-with-solr/"
+  },
+  {
+    "keyUrl": "kirill",
+    "name": "Kirill Arshuk-Popov",
+    "jobTitle": null,
+    "linkedinUrl": null,
+    "date": "20200427",
+    "article_title": "Progressive Web Apps: Comparison of PWA with Other Approaches to Build Mobile User Experience",
+    "article_url": "/pwa-research/"
+  },
+  {
+    "keyUrl": "maksym-usichenko",
+    "name": "Maksym Usichenko",
+    "jobTitle": "Delivery Manager",
+    "linkedinUrl": null,
+    "date": "20181003",
+    "article_title": "Yes, you can have it both ways: in-sprint QE automation improves code and accelerates development speed",
+    "article_url": "/how-in-sprint-qe-automation-improves-accelerates-development/"
+  },
+  {
+    "keyUrl": "jiaye-pan",
+    "name": "Jiaye Pan",
+    "jobTitle": "Data Science Intern",
+    "linkedinUrl": null,
+    "date": "20190821",
+    "article_title": "When life gives you lemons: Analyzing negative reviews to improve your mobile app",
+    "article_url": "/when-life-gives-you-lemons/"
+  },
+  {
+    "keyUrl": "kirill-evstigneev",
+    "name": "Kirill Evstigneev",
+    "jobTitle": null,
+    "linkedinUrl": null,
+    "date": "20201117",
+    "article_title": "Istio Service Mesh Beyond Kubernetes",
+    "article_url": "/istio-service-mesh-beyond-kubernetes/"
+  },
+  {
+    "keyUrl": "kirill-evstigneev",
+    "name": "Kirill Evstigneev",
+    "jobTitle": null,
+    "linkedinUrl": null,
+    "date": "20201029",
+    "article_title": "How to Release Components Independently when you have a Distributed Monolith",
+    "article_url": "/how-to-release-components-independently-if-what-you-have-is-a-distributed-monolith/"
+  },
+  {
+    "keyUrl": "kirill-evstigneev",
+    "name": "Kirill Evstigneev",
+    "jobTitle": null,
+    "linkedinUrl": null,
+    "date": "20201013",
+    "article_title": "CI/CD challenges of 2020",
+    "article_url": "/ci-cd-challenges-of-2020/"
+  },
+  {
+    "keyUrl": "kirill-evstigneev",
+    "name": "Kirill Evstigneev",
+    "jobTitle": null,
+    "linkedinUrl": null,
+    "date": "20201005",
+    "article_title": "When microservices migration doesn\u2019t make sense",
+    "article_url": "/when-microservices-migration-doesnt-make-sense/"
+  },
+  {
+    "keyUrl": "kirill-evstigneev",
+    "name": "Kirill Evstigneev",
+    "jobTitle": null,
+    "linkedinUrl": null,
+    "date": "20200923",
+    "article_title": "5 strategies to reduce cloud cost",
+    "article_url": "/5-strategies-to-reduce-cloud-cost/"
+  },
+  {
+    "keyUrl": "kirill-evstigneev",
+    "name": "Kirill Evstigneev",
+    "jobTitle": null,
+    "linkedinUrl": null,
+    "date": "20200916",
+    "article_title": "Avoid the monolithic release process when migrating to microservices",
+    "article_url": "/avoid-the-monolithic-release-process-when-migrating-to-microservices/"
   },
   {
     "keyUrl": "ivan-petrushin",
@@ -979,6 +1375,15 @@
     "date": "20161212",
     "article_title": "Why e-commerce search engines must be aware of inventory",
     "article_url": "/why-e-commerce-search-engines-must-be-aware-of-inventory/"
+  },
+  {
+    "keyUrl": "ihor-stetsiuk",
+    "name": "Ihor Stetsiuk",
+    "jobTitle": null,
+    "linkedinUrl": null,
+    "date": "20200427",
+    "article_title": "Progressive Web Apps: Comparison of PWA with Other Approaches to Build Mobile User Experience",
+    "article_url": "/pwa-research/"
   },
   {
     "keyUrl": "ilya-katsov",
@@ -1116,15 +1521,6 @@
     "article_url": "/deep-reinforcement-learning-for-supply-chain-and-price-optimization/"
   },
   {
-    "keyUrl": "jiaye-pan",
-    "name": "Jiaye Pan",
-    "jobTitle": "Data Science Intern",
-    "linkedinUrl": null,
-    "date": "20190821",
-    "article_title": "When life gives you lemons: Analyzing negative reviews to improve your mobile app",
-    "article_url": "/when-life-gives-you-lemons/"
-  },
-  {
     "keyUrl": "evgeniia-mikhailova",
     "name": "Evgeniia Mikhailova",
     "jobTitle": null,
@@ -1134,49 +1530,13 @@
     "article_url": "/relevant-facets-how-to-select-and-promote-facets-with-deep-learning/"
   },
   {
-    "keyUrl": "ihor",
-    "name": "Ihor Syrov",
-    "jobTitle": null,
-    "linkedinUrl": null,
-    "date": "20200306",
-    "article_title": "Evolution of CMS and overview of modern DXP platforms",
-    "article_url": "/cms-research/"
-  },
-  {
-    "keyUrl": "egor-zubkov",
-    "name": "Egor Zubkov",
-    "jobTitle": "Senior iOS Developer",
-    "linkedinUrl": null,
-    "date": "20201007",
-    "article_title": "iOS Architecture Patterns for Large-Scale Development, part 3: UI architecture approach",
-    "article_url": "/ui-architecture-approach/"
-  },
-  {
-    "keyUrl": "egor-zubkov",
-    "name": "Egor Zubkov",
-    "jobTitle": "Senior iOS Developer",
-    "linkedinUrl": null,
-    "date": "20200826",
-    "article_title": "iOS Architecture Patterns for Large-Scale Development, part 1: Modular architecture",
-    "article_url": "/modular-architecture-in-ios/"
-  },
-  {
-    "keyUrl": "egor-zubkov",
-    "name": "Egor Zubkov",
-    "jobTitle": "Senior iOS Developer",
-    "linkedinUrl": null,
-    "date": "20180110",
-    "article_title": "How ARKit and ARCore recognize vertical planes despite limited depth perception",
-    "article_url": "/how-arkit-and-arcore-recognize-vertical-planes/"
-  },
-  {
-    "keyUrl": "ihor-stetsiuk",
-    "name": "Ihor Stetsiuk",
-    "jobTitle": null,
-    "linkedinUrl": null,
-    "date": "20200427",
-    "article_title": "Progressive Web Apps: Comparison of PWA with Other Approaches to Build Mobile User Experience",
-    "article_url": "/pwa-research/"
+    "keyUrl": "eugene-steinberg",
+    "name": "Eugene Steinberg",
+    "jobTitle": "Bay Area",
+    "linkedinUrl": "https://www.linkedin.com/in/eugene-steinberg-9bb4884",
+    "date": "20201215",
+    "article_title": "Virtual backgrounds: real-time deep semantic segmentation on mobile devices",
+    "article_url": "/virtual-background/"
   },
   {
     "keyUrl": "eugene-steinberg",
@@ -1305,31 +1665,49 @@
     "article_url": "/semantic-vector-search-the-new-frontier-in-product-discovery/"
   },
   {
-    "keyUrl": "eugene-steinberg",
-    "name": "Eugene Steinberg",
-    "jobTitle": "Bay Area",
-    "linkedinUrl": "https://www.linkedin.com/in/eugene-steinberg-9bb4884",
-    "date": "20190925",
-    "article_title": "How deep learning improves recommendations for 80% of your catalog",
-    "article_url": "/how-deep-learning-improves-recommendations-for-your-catalog/"
-  },
-  {
-    "keyUrl": "igor",
-    "name": "Igor Kononov",
+    "keyUrl": "ihor",
+    "name": "Ihor Syrov",
     "jobTitle": null,
     "linkedinUrl": null,
-    "date": "20200924",
-    "article_title": "Open Banking as a Driver of Digital Transformation in the EU Banking Industry",
-    "article_url": "/open-banking-as-a-driver-of-digital-transformation-in-the-eu-banking-industry/"
+    "date": "20200306",
+    "article_title": "Evolution of CMS and overview of modern DXP platforms",
+    "article_url": "/cms-research/"
   },
   {
-    "keyUrl": "igor",
-    "name": "Igor Kononov",
-    "jobTitle": null,
+    "keyUrl": "ilia",
+    "name": "Ilia Grabko",
+    "jobTitle": "Saint-Petersburg",
     "linkedinUrl": null,
-    "date": "20200323",
-    "article_title": "WSO2 vs GraphQL: overview and comparison of open source API management products",
-    "article_url": "/wso2-vs-graphql-overview-and-comparison-of-open-source-api-management-products/"
+    "date": "20201215",
+    "article_title": "Virtual backgrounds: real-time deep semantic segmentation on mobile devices",
+    "article_url": "/virtual-background/"
+  },
+  {
+    "keyUrl": "egor-zubkov",
+    "name": "Egor Zubkov",
+    "jobTitle": "Senior iOS Developer",
+    "linkedinUrl": null,
+    "date": "20201007",
+    "article_title": "iOS Architecture Patterns for Large-Scale Development, part 3: UI architecture approach",
+    "article_url": "/ui-architecture-approach/"
+  },
+  {
+    "keyUrl": "egor-zubkov",
+    "name": "Egor Zubkov",
+    "jobTitle": "Senior iOS Developer",
+    "linkedinUrl": null,
+    "date": "20200826",
+    "article_title": "iOS Architecture Patterns for Large-Scale Development, part 1: Modular architecture",
+    "article_url": "/modular-architecture-in-ios/"
+  },
+  {
+    "keyUrl": "egor-zubkov",
+    "name": "Egor Zubkov",
+    "jobTitle": "Senior iOS Developer",
+    "linkedinUrl": null,
+    "date": "20180110",
+    "article_title": "How ARKit and ARCore recognize vertical planes despite limited depth perception",
+    "article_url": "/how-arkit-and-arcore-recognize-vertical-planes/"
   },
   {
     "keyUrl": "dmitry-yaraev",
@@ -1368,60 +1746,6 @@
     "article_url": "/introducing-augmented-reality-for-e-commerce/"
   },
   {
-    "keyUrl": "ezraberger",
-    "name": "Ezra Berger",
-    "jobTitle": null,
-    "linkedinUrl": null,
-    "date": "20200121",
-    "article_title": "Delivering digital transformation: \nWhy automation and creating a high-performance engineering culture are vital to digital success",
-    "article_url": "/why-automation-and-a-high-performance-engineering-culture-ensure-digital-success/"
-  },
-  {
-    "keyUrl": "ezraberger",
-    "name": "Ezra Berger",
-    "jobTitle": null,
-    "linkedinUrl": null,
-    "date": "20200116",
-    "article_title": "ATG\u2019s black box blocking your e-commerce view? Replatform with microservices",
-    "article_url": "/atgs-black-box-blocking-your-e-commerce-view/"
-  },
-  {
-    "keyUrl": "ezraberger",
-    "name": "Ezra Berger",
-    "jobTitle": null,
-    "linkedinUrl": null,
-    "date": "20191230",
-    "article_title": "Digital transformation requires new technology partnerships and Agile co-innovation",
-    "article_url": "/digital-transformation-requires-new-technology-partnerships-and-agile-co-innovation/"
-  },
-  {
-    "keyUrl": "ezraberger",
-    "name": "Ezra Berger",
-    "jobTitle": null,
-    "linkedinUrl": null,
-    "date": "20191113",
-    "article_title": "What is computer vision and what can it do?",
-    "article_url": "/what-is-computer-vision-and-what-can-it-do/"
-  },
-  {
-    "keyUrl": "ezraberger",
-    "name": "Ezra Berger",
-    "jobTitle": null,
-    "linkedinUrl": null,
-    "date": "20191031",
-    "article_title": "What computer vision services, platforms & solutions are on the market",
-    "article_url": "/what-computer-vision-services-platforms-and-solutions-are-on-the-market/"
-  },
-  {
-    "keyUrl": "ezraberger",
-    "name": "Ezra Berger",
-    "jobTitle": null,
-    "linkedinUrl": null,
-    "date": "20191017",
-    "article_title": "10 ways computer vision is transforming digital retail",
-    "article_url": "/computer-vision-is-transforming-digital-retail/"
-  },
-  {
     "keyUrl": "dmitry-sobolev",
     "name": "Dmitry Sobolev",
     "jobTitle": null,
@@ -1456,177 +1780,6 @@
     "date": "20200904",
     "article_title": "Vector space retrieval model for e-commerce",
     "article_url": "/vs-model-for-ecommerce/"
-  },
-  {
-    "keyUrl": "dmitry-latnikov",
-    "name": "Dmitry Latnikov",
-    "jobTitle": "Delivery Director in Engineering",
-    "linkedinUrl": null,
-    "date": "20161011",
-    "article_title": "Six design principles of Continuous Performance Testing",
-    "article_url": "/six-design-principles-of-continuous-performance-testing/"
-  },
-  {
-    "keyUrl": "dmitry-latnikov",
-    "name": "Dmitry Latnikov",
-    "jobTitle": "Delivery Director in Engineering",
-    "linkedinUrl": null,
-    "date": "20160921",
-    "article_title": "How to extend CI pipelines with Continuous Performance Testing",
-    "article_url": "/how-to-extend-continuous-integration-ci-pipelines-with-continuous-performance-testing-cpt/"
-  },
-  {
-    "keyUrl": "anna-safonova",
-    "name": "Anna Safonova",
-    "jobTitle": "Saint-Petersburg, Russia",
-    "linkedinUrl": null,
-    "date": "20200803",
-    "article_title": "How to use GCP and AWS big data and AI cloud services from Jupyter Notebook",
-    "article_url": "/work-with-google-cloud-and-aws-services-from-jupyter-notebook/"
-  },
-  {
-    "keyUrl": "dmitriy",
-    "name": "Dmitriy Bobkov",
-    "jobTitle": null,
-    "linkedinUrl": null,
-    "date": "20200916",
-    "article_title": "Semantic query parsing blueprint",
-    "article_url": "/semantic-query-parsing-blueprint/"
-  },
-  {
-    "keyUrl": "anton-ovchinnikov",
-    "name": "Anton Ovchinnikov",
-    "jobTitle": "Data Scientist",
-    "linkedinUrl": "https://www.linkedin.com/in/ovchinnikovanton",
-    "date": "20170110",
-    "article_title": "Chatbots in retail: chatbot technology and architecture advance",
-    "article_url": "/chatbots-in-retail-2017-is-shaping-up-to-be-a-big-year/"
-  },
-  {
-    "keyUrl": "anton-ovchinnikov",
-    "name": "Anton Ovchinnikov",
-    "jobTitle": "Data Scientist",
-    "linkedinUrl": "https://www.linkedin.com/in/ovchinnikovanton",
-    "date": "20161202",
-    "article_title": "Visualizing insights with an analytics dashboard",
-    "article_url": "/visualizing-the-insights-with-analytics-dashboard/"
-  },
-  {
-    "keyUrl": "anton-ovchinnikov",
-    "name": "Anton Ovchinnikov",
-    "jobTitle": "Data Scientist",
-    "linkedinUrl": "https://www.linkedin.com/in/ovchinnikovanton",
-    "date": "20161128",
-    "article_title": "Selecting, training, evaluating, and tuning the model",
-    "article_url": "/selecting-training-evaluating-and-tuning-the-model-for-twitter-stream-sentiment-analysis-of-social-movie-review/"
-  },
-  {
-    "keyUrl": "anton-ovchinnikov",
-    "name": "Anton Ovchinnikov",
-    "jobTitle": "Data Scientist",
-    "linkedinUrl": "https://www.linkedin.com/in/ovchinnikovanton",
-    "date": "20161118",
-    "article_title": "Creating training and test data sets and preparing the data",
-    "article_url": "/creating-training-and-test-data-sets-and-preparing-the-data-for-twitter-stream-sentiment-analysis-of-social-movie-reviews/"
-  },
-  {
-    "keyUrl": "anton-ovchinnikov",
-    "name": "Anton Ovchinnikov",
-    "jobTitle": "Data Scientist",
-    "linkedinUrl": "https://www.linkedin.com/in/ovchinnikovanton",
-    "date": "20161111",
-    "article_title": "Constructing a data dictionary for Twitter stream sentiment analysis of social movie reviews",
-    "article_url": "/constructing-a-data-dictionary-for-twitter-stream-sentiment-analysis-of-social-movie-reviews/"
-  },
-  {
-    "keyUrl": "anton-ovchinnikov",
-    "name": "Anton Ovchinnikov",
-    "jobTitle": "Data Scientist",
-    "linkedinUrl": "https://www.linkedin.com/in/ovchinnikovanton",
-    "date": "20161111",
-    "article_title": "Understanding the structure of the data in Twitter streams for sentiment analysis applications",
-    "article_url": "/understanding-the-structure-of-the-data-in-twitter-streams-for-sentiment-analysis-applications/"
-  },
-  {
-    "keyUrl": "anton-ovchinnikov",
-    "name": "Anton Ovchinnikov",
-    "jobTitle": "Data Scientist",
-    "linkedinUrl": "https://www.linkedin.com/in/ovchinnikovanton",
-    "date": "20161110",
-    "article_title": "Using CRISP-DM methodology for Twitter sentiment analysis",
-    "article_url": "/data-scientists-vocabulary-and-scientific-process-applied-to-social-movie-reviews/"
-  },
-  {
-    "keyUrl": "anton-ovchinnikov",
-    "name": "Anton Ovchinnikov",
-    "jobTitle": "Data Scientist",
-    "linkedinUrl": "https://www.linkedin.com/in/ovchinnikovanton",
-    "date": "20161110",
-    "article_title": "The basics of data science with a sentiment analysis example",
-    "article_url": "/lets-use-twitter-stream-sentiment-analysis-of-popular-movies-to-teach-the-rudiments-of-data-science/"
-  },
-  {
-    "keyUrl": "anton-ovchinnikov",
-    "name": "Anton Ovchinnikov",
-    "jobTitle": "Data Scientist",
-    "linkedinUrl": "https://www.linkedin.com/in/ovchinnikovanton",
-    "date": "20161110",
-    "article_title": "From reference architecture to reference implementation: detailing the DevOps aspects of In-Stream Processing Service",
-    "article_url": "/from-reference-architecture-to-reference-implementation-detailing-the-devops-aspects-of-in-stream-processing-service/"
-  },
-  {
-    "keyUrl": "anton-ovchinnikov",
-    "name": "Anton Ovchinnikov",
-    "jobTitle": "Data Scientist",
-    "linkedinUrl": "https://www.linkedin.com/in/ovchinnikovanton",
-    "date": "20160710",
-    "article_title": "In-Stream Processing service blueprint",
-    "article_url": "/in-stream-processing-service-blueprint/"
-  },
-  {
-    "keyUrl": "anton-ovchinnikov",
-    "name": "Anton Ovchinnikov",
-    "jobTitle": "Data Scientist",
-    "linkedinUrl": "https://www.linkedin.com/in/ovchinnikovanton",
-    "date": "20160507",
-    "article_title": "Overview of In-Stream Processing solutions on the market",
-    "article_url": "/overview-of-in-stream-processing-solutions-on-the-market/"
-  },
-  {
-    "keyUrl": "anton-ovchinnikov",
-    "name": "Anton Ovchinnikov",
-    "jobTitle": "Data Scientist",
-    "linkedinUrl": "https://www.linkedin.com/in/ovchinnikovanton",
-    "date": "20160505",
-    "article_title": "How In-Stream Processing works",
-    "article_url": "/how-in-stream-processing-works/"
-  },
-  {
-    "keyUrl": "anton-ovchinnikov",
-    "name": "Anton Ovchinnikov",
-    "jobTitle": "Data Scientist",
-    "linkedinUrl": "https://www.linkedin.com/in/ovchinnikovanton",
-    "date": "20160505",
-    "article_title": "What is In-Stream Processing?",
-    "article_url": "/what-is-in-stream-processing/"
-  },
-  {
-    "keyUrl": "dmitry",
-    "name": "Dmitry Karachentsev",
-    "jobTitle": null,
-    "linkedinUrl": null,
-    "date": "20200630",
-    "article_title": "Which Enterprise Data Warehouse performs better for your workloads?",
-    "article_url": "/edw-performance-comparison/"
-  },
-  {
-    "keyUrl": "conor-mcnamara",
-    "name": "Conor McNamara",
-    "jobTitle": "Data Scientist in Engineering: Machine Learning",
-    "linkedinUrl": null,
-    "date": "20180501",
-    "article_title": "Xgboost vs Catboost vs Lightgbm:\nwhich is best for price prediction?",
-    "article_url": "/xgboost-vs-catboost-vs-lightgbm-which-is-best-for-price-prediction/"
   },
   {
     "keyUrl": "dmitry-mezhensky",
@@ -1665,156 +1818,21 @@
     "article_url": "/moving-from-batch-to-stream-processing-with-kinesis-spark-and-redshift/"
   },
   {
-    "keyUrl": "anna",
-    "name": "Anna Muslimova",
-    "jobTitle": null,
+    "keyUrl": "dmitry-latnikov",
+    "name": "Dmitry Latnikov",
+    "jobTitle": "Delivery Director in Engineering",
     "linkedinUrl": null,
-    "date": "20200323",
-    "article_title": "WSO2 vs GraphQL: overview and comparison of open source API management products",
-    "article_url": "/wso2-vs-graphql-overview-and-comparison-of-open-source-api-management-products/"
+    "date": "20161011",
+    "article_title": "Six design principles of Continuous Performance Testing",
+    "article_url": "/six-design-principles-of-continuous-performance-testing/"
   },
   {
-    "keyUrl": "andrey-kudryavstev",
-    "name": "Andrey Kudryavstev",
-    "jobTitle": "Senior Software Engineer",
+    "keyUrl": "dmitry-latnikov",
+    "name": "Dmitry Latnikov",
+    "jobTitle": "Delivery Director in Engineering",
     "linkedinUrl": null,
-    "date": "20171219",
-    "article_title": "How to use Solr suggester for autocomplete and typeahead search",
-    "article_url": "/utilizing-solr-suggester-for-typeahead-search-engines/"
-  },
-  {
-    "keyUrl": "andrey-kudryavstev",
-    "name": "Andrey Kudryavstev",
-    "jobTitle": "Senior Software Engineer",
-    "linkedinUrl": null,
-    "date": "20170228",
-    "article_title": "How to sort parent documents by child attributes in Solr",
-    "article_url": "/how-to-sort-parent-documents-by-child-attributes-in-solr/"
-  },
-  {
-    "keyUrl": "andrey-kudryavstev",
-    "name": "Andrey Kudryavstev",
-    "jobTitle": "Senior Software Engineer",
-    "linkedinUrl": null,
-    "date": "20170222",
-    "article_title": "Implementing autocomplete with Solr",
-    "article_url": "/implementing-autocomplete-with-solr/"
-  },
-  {
-    "keyUrl": "alyanguzov",
-    "name": "Alexey Lyanguzov",
-    "jobTitle": "St. Petersburg",
-    "linkedinUrl": null,
-    "date": "20201209",
-    "article_title": "A Universal Approach to eCommerce GUI Test Automation",
-    "article_url": "/a-universal-approach-to-ecommerce-gui-test-automation/"
-  },
-  {
-    "keyUrl": "alyanguzov",
-    "name": "Alexey Lyanguzov",
-    "jobTitle": "St. Petersburg",
-    "linkedinUrl": null,
-    "date": "20201203",
-    "article_title": "How Regular Data Monitoring Creates a Healthy Lifestyle for Your Business",
-    "article_url": "/how-regular-data-monitoring-creates-a-healthy-lifestyle-for-your-business/"
-  },
-  {
-    "keyUrl": "alexander-gaidukov",
-    "name": "Alexander Gaidukov",
-    "jobTitle": null,
-    "linkedinUrl": null,
-    "date": "20201007",
-    "article_title": "iOS Architecture Patterns for Large-Scale Development, part 3: UI architecture approach",
-    "article_url": "/ui-architecture-approach/"
-  },
-  {
-    "keyUrl": "aleksandr",
-    "name": "Aleksandr Vasilev",
-    "jobTitle": "St. Petersburg, Russia",
-    "linkedinUrl": null,
-    "date": "20200303",
-    "article_title": "Tiered machine learned ranking improves relevance for the retail search",
-    "article_url": "/tiered-machine-learning-ranking-improves-relevance-for-the-retail-search/"
-  },
-  {
-    "keyUrl": "aleksandr",
-    "name": "Aleksandr Vasilev",
-    "jobTitle": "St. Petersburg, Russia",
-    "linkedinUrl": null,
-    "date": "20200222",
-    "article_title": "Understanding search query intent with deep learning",
-    "article_url": "/understanding-search-query-intent-with-deep-learning/"
-  },
-  {
-    "keyUrl": "andrey-chevozerov",
-    "name": "Andrey Chevozerov",
-    "jobTitle": "Senior iOS Developer",
-    "linkedinUrl": null,
-    "date": "20190731",
-    "article_title": "Easily move your native app to Flutter",
-    "article_url": "/easily-move-your-native-app-to-flutter/"
-  },
-  {
-    "keyUrl": "alex-rodin",
-    "name": "Alex Rodin",
-    "jobTitle": "Principal software engineer",
-    "linkedinUrl": null,
-    "date": "20200803",
-    "article_title": "How to use GCP and AWS big data and AI cloud services from Jupyter Notebook",
-    "article_url": "/work-with-google-cloud-and-aws-services-from-jupyter-notebook/"
-  },
-  {
-    "keyUrl": "alex-rodin",
-    "name": "Alex Rodin",
-    "jobTitle": "Principal software engineer",
-    "linkedinUrl": null,
-    "date": "20200715",
-    "article_title": "Add anomaly detection to your data with Grid Dynamics accelerator",
-    "article_url": "/add-anomaly-detection-to-your-data-with-grid-dynamics-accelerator/"
-  },
-  {
-    "keyUrl": "alex-rodin",
-    "name": "Alex Rodin",
-    "jobTitle": "Principal software engineer",
-    "linkedinUrl": null,
-    "date": "20200518",
-    "article_title": "Unsupervised real time anomaly detection",
-    "article_url": "/unsupervised-real-time-anomaly-detection/"
-  },
-  {
-    "keyUrl": "alex-rodin",
-    "name": "Alex Rodin",
-    "jobTitle": "Principal software engineer",
-    "linkedinUrl": null,
-    "date": "20190308",
-    "article_title": "Safety stock optimization for Ship-from-Store",
-    "article_url": "/safety-stock-optimization-for-ship-from-store/"
-  },
-  {
-    "keyUrl": "alex-rodin",
-    "name": "Alex Rodin",
-    "jobTitle": "Principal software engineer",
-    "linkedinUrl": null,
-    "date": "20180807",
-    "article_title": "Predictive analytics for promotion and price optimization",
-    "article_url": "/predictive-analytics-for-promotion-and-price-optimization/"
-  },
-  {
-    "keyUrl": "aleksey-romanov",
-    "name": "Aleksey Romanov",
-    "jobTitle": null,
-    "linkedinUrl": null,
-    "date": "20200222",
-    "article_title": "Understanding search query intent with deep learning",
-    "article_url": "/understanding-search-query-intent-with-deep-learning/"
-  },
-  {
-    "keyUrl": "aleksey-romanov",
-    "name": "Aleksey Romanov",
-    "jobTitle": null,
-    "linkedinUrl": null,
-    "date": "20190925",
-    "article_title": "How deep learning improves recommendations for 80% of your catalog",
-    "article_url": "/how-deep-learning-improves-recommendations-for-your-catalog/"
+    "date": "20160921",
+    "article_title": "How to extend CI pipelines with Continuous Performance Testing",
+    "article_url": "/how-to-extend-continuous-integration-ci-pipelines-with-continuous-performance-testing-cpt/"
   }
 ]

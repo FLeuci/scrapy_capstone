@@ -13,14 +13,13 @@ from datetime import datetime
 class ReportCrawler:
     authors = []
     articles = []
-    base_path = "./data/"
 
     def __init__(self):
         import os
-        if os.path.exists(os.path.dirname(ReportCrawler.base_path)):
+        if os.path.exists(os.path.dirname(conf.base_path)):
             import shutil
-            shutil.rmtree(os.path.dirname(ReportCrawler.base_path))
-        os.makedirs(os.path.dirname(ReportCrawler.base_path))
+            shutil.rmtree(os.path.dirname(conf.base_path))
+        os.makedirs(os.path.dirname(conf.base_path))
 
     def crawl(self):
         configure_logging()
@@ -36,9 +35,9 @@ class ReportCrawler:
         reactor.run()  # the script will block here until the last crawl call is finished
 
     def export_json(self):
-        with open(f"{ReportCrawler.base_path}authors.json", "w") as f:
+        with open(f"{conf.base_path}authors.json", "w") as f:
             f.write(json.dumps(ReportCrawler.authors))
-        with open(f"{ReportCrawler.base_path}articles.json", "w") as f:
+        with open(f"{conf.base_path}articles.json", "w") as f:
             f.write(json.dumps(ReportCrawler.articles))
 
 
@@ -56,7 +55,7 @@ class AuthorInfoCrawler(CrawlSpider):
         for row in date_title_part:
             row_extracted = row.extract()
             date = Selector(text=row_extracted).xpath('///span/text()').extract_first()
-            date_formatted = conf.pdtts(date, '%B %d, %Y')
+            date_formatted = conf.parse_dtts(date, '%B %d, %Y')
             article_title = Selector(text=row_extracted).xpath('///a/text()').extract_first()
             article_url = Selector(text=row_extracted).xpath('///a/@href').extract_first()
             ReportCrawler.authors.append({'keyUrl': key_url,
@@ -78,11 +77,11 @@ class ArticleInfoCrawer(Spider):
         for link in author_link_list:
             yield Request(url=link[1])
 
-    def parse(self, response):
+    def parse(self, response, **kwargs):
         title = response.xpath('//*[@id="wrap"]/h1/text()').extract_first()
         url_to_full_version = response._get_url()
         first_160 = ''.join(response.xpath('//*[@id="woe"]/section/div/p/text()').extract())[:160]
-        date_formatted = conf.pdtts(
+        date_formatted = conf.parse_dtts(
             conf.clean_records_regex(
                 response.xpath('//*[@id="wrap"]/div/div[2]/text()').extract_first(), lambda v: v[0:-2]),
             '%b %d, %Y')
@@ -90,8 +89,7 @@ class ArticleInfoCrawer(Spider):
         authors_section = response.xpath('//*[@id="wrap"]/div/div[1]/div/span/a')
         for row in authors_section:
             full_author_url = Selector(text=row.extract()).xpath('///@href') \
-                .extract_first() \
-                .rsplit('/')[-2]
+                .extract_first()
             author_fullname = conf.clean_records_regex(
                 Selector(text=row.extract()).xpath('///span/text()').extract_first())
             ReportCrawler.articles.append({
@@ -100,6 +98,7 @@ class ArticleInfoCrawer(Spider):
                 'first160': first_160,
                 'dateFormatted': date_formatted,
                 'tags': tags,
-                'authorUrl': f"{conf.gd_base_url}/{full_author_url}",
-                'authorName': author_fullname
+                'authorUrl': f"{conf.gd_base_url}{full_author_url}",
+                'authorName': author_fullname,
+                'author_key': full_author_url.rsplit('/')[-2]
             })
