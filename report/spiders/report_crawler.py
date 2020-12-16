@@ -6,8 +6,8 @@ from scrapy.linkextractors import LinkExtractor
 from scrapy.spiders import CrawlSpider, Rule, Spider
 from scrapy.utils.log import configure_logging
 from twisted.internet import reactor, defer
+
 import report.utils as conf
-from datetime import datetime
 
 
 class ReportCrawler:
@@ -21,7 +21,8 @@ class ReportCrawler:
             shutil.rmtree(os.path.dirname(conf.base_path))
         os.makedirs(os.path.dirname(conf.base_path))
 
-    def crawl(self):
+    @staticmethod
+    def crawl():
         configure_logging()
         runner = CrawlerRunner()
 
@@ -34,6 +35,7 @@ class ReportCrawler:
         crawl()
         reactor.run()  # the script will block here until the last crawl call is finished
 
+    @staticmethod
     def export_json(self):
         with open(f"{conf.base_path}authors.json", "w") as f:
             f.write(json.dumps(ReportCrawler.authors))
