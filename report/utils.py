@@ -11,10 +11,10 @@ def clean_records_regex(value):
 
 
 def exec_func_chain(src_value, funcs):
-    if(len(funcs) == 1):
+    if (len(funcs) == 1):
         return funcs[0](src_value) if src_value else src_value
     else:
-        return exec_func_chain(funcs[0](src_value), funcs[1:]) if src_value else src_value
+        return exec_func_chain(funcs[0](src_value) if src_value else src_value, funcs[1:])
 
 
 def parse_dtts(date_str, src_format):
