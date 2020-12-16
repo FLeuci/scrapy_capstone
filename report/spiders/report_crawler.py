@@ -81,10 +81,12 @@ class ArticleInfoCrawer(Spider):
         title = response.xpath('//*[@id="wrap"]/h1/text()').extract_first()
         url_to_full_version = response._get_url()
         first_160 = ''.join(response.xpath('//*[@id="woe"]/section/div/p/text()').extract())[:160]
-        date_formatted = conf.parse_dtts(
-            conf.clean_records_regex(
-                response.xpath('//*[@id="wrap"]/div/div[2]/text()').extract_first(), lambda v: v[0:-2]),
-            '%b %d, %Y')
+        base_date = response.xpath('//*[@id="wrap"]/div/div[2]/text()').extract_first()
+        date_formatted = conf.exec_func_chain(base_date,
+                             [conf.clean_records_regex,
+                              lambda v: v[0:-2],
+                              lambda v: conf.parse_dtts(v, '%b %d, %Y')])
+
         tags = response.xpath('//*[@id="woe"]/section[3]/div/div[1]/a/text()').extract()
         authors_section = response.xpath('//*[@id="wrap"]/div/div[1]/div/span/a')
         for row in authors_section:

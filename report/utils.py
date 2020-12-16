@@ -6,8 +6,15 @@ gd_base_url = "https://blog.griddynamics.com"
 base_path = "./data/"
 
 
-def clean_records_regex(value, downstream_func=lambda x: x):
-    return downstream_func(re.sub(r"[\n\t\r]*", '', value)) if value else None
+def clean_records_regex(value):
+    return re.sub(r"[\n\t\r]*", '', value) if value else None
+
+
+def exec_func_chain(src_value, funcs):
+    if(len(funcs) == 1):
+        return funcs[0](src_value) if src_value else src_value
+    else:
+        return exec_func_chain(funcs[0](src_value), funcs[1:]) if src_value else src_value
 
 
 def parse_dtts(date_str, src_format):
