@@ -1,4 +1,5 @@
 import json
+import pandas as pd
 
 from scrapy import Selector, Request
 from scrapy.crawler import CrawlerRunner
@@ -7,12 +8,13 @@ from scrapy.spiders import CrawlSpider, Rule, Spider
 from scrapy.utils.log import configure_logging
 from twisted.internet import reactor, defer
 
-import report.utils as conf
+import main.utils as conf
 
 
 class ReportCrawler:
     authors = []
     articles = []
+
 
     def __init__(self):
         import os
@@ -36,7 +38,7 @@ class ReportCrawler:
         reactor.run()  # the script will block here until the last crawl call is finished
 
     @staticmethod
-    def export_json(self):
+    def export_json():
         with open(f"{conf.base_path}authors.json", "w") as f:
             f.write(json.dumps(ReportCrawler.authors))
         with open(f"{conf.base_path}articles.json", "w") as f:
@@ -45,7 +47,7 @@ class ReportCrawler:
 
 class AuthorInfoCrawler(CrawlSpider):
     name = 'AuthorInfoCrawler'
-    rules = (Rule(LinkExtractor(allow=('/author/')), callback='parse'),)
+    rules = (Rule(LinkExtractor(allow='/author/'), callback='parse'),)
     start_urls = [f"{conf.gd_base_url}/all-authors/"]
 
     def parse(self, response, **kwargs):
@@ -89,7 +91,7 @@ class ArticleInfoCrawer(Spider):
                                                lambda v: v[0:-2],
                                                lambda v: conf.parse_dtts(v, '%b %d, %Y')])
 
-        tags = response.xpath('//*[@id="woe"]/section[3]/div/div[1]/a/text()').extract()
+        tags = response.xpath('//*[@id="woe"]/section[3]/div/div/a/text()').extract()
         authors_section = response.xpath('//*[@id="wrap"]/div/div[1]/div/span/a')
         for row in authors_section:
             full_author_url = Selector(text=row.extract()).xpath('///@href') \
@@ -106,3 +108,4 @@ class ArticleInfoCrawer(Spider):
                 'authorName': author_fullname,
                 'author_key': full_author_url.rsplit('/')[-2]
             })
+

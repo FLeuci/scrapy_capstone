@@ -3,7 +3,7 @@ from datetime import datetime
 import os
 
 gd_base_url = "https://blog.griddynamics.com"
-base_path = "./data/"
+base_path = "/Users/fleuci/report/data/"
 
 
 def clean_records_regex(value):
