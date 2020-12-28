@@ -15,7 +15,6 @@ class ReportCrawler:
     authors = []
     articles = []
 
-
     def __init__(self):
         import os
         if os.path.exists(os.path.dirname(conf.base_path)):
@@ -31,7 +30,7 @@ class ReportCrawler:
         @defer.inlineCallbacks
         def crawl():
             yield runner.crawl(AuthorInfoCrawler)
-            yield runner.crawl(ArticleInfoCrawer)
+            yield runner.crawl(ArticleInfoCrawler)
             reactor.stop()
 
         crawl()
@@ -71,7 +70,7 @@ class AuthorInfoCrawler(CrawlSpider):
                                           'article_url': article_url})
 
 
-class ArticleInfoCrawer(Spider):
+class ArticleInfoCrawler(Spider):
     name = 'ArticleInfoCrawer'
 
     def start_requests(self):

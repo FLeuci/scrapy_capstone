@@ -1,0 +1,17 @@
+import unittest
+from report import ReportMaker
+import pandas as pd
+
+list_of_authors = pd.read_json('/Users/fleuci/report/data/authors.json')
+list_of_articlesJson = pd.read_json('/Users/fleuci/report/data/articles.json')
+list_of_articles = list_of_articlesJson.drop_duplicates(subset='title')
+
+class TestUnit(unittest.TestCase):
+
+    def test_authors(self):
+        self.assertEqual(ReportMaker.authors(list_of_authors), )
+
+    def test_articles(self):
+        self.assertEqual(ReportMaker.articles(list_of_articles), )
+
+
