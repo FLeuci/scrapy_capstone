@@ -1,10 +1,18 @@
 import re
 from datetime import datetime
 import os
+import yaml
 
-gd_base_url = "https://blog.griddynamics.com"
-base_path = "/Users/fleuci/report/data/"
 
+class Configurations:
+    def __init__(self, conf_path):
+        with open(conf_path) as f:
+            out_confs = yaml.load(f)
+            self.gd_base_url = out_confs.get('gd_base_url')
+            self.base_path = out_confs.get('base_path')
+            self.base_path_empty = len(os.listdir(self.base_path)) == 0 if os.path.isdir(self.base_path) else True
+
+confs = Configurations("/Users/scalabrese/PycharmProjects/scrapy_capstone/configurations/conf.yml")
 
 def clean_records_regex(value):
     return re.sub(r"[\n\t\r]*", '', value) if value else None
@@ -19,6 +27,3 @@ def exec_func_chain(src_value, funcs):
 
 def parse_dtts(date_str, src_format):
     return datetime.strptime(date_str, src_format).strftime('%Y%m%d') if date_str and src_format else None
-
-
-base_path_empty = len(os.listdir(base_path)) == 0 if os.path.isdir(base_path) else True

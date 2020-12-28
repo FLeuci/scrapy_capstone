@@ -5,29 +5,30 @@ import json
 import collections
 import matplotlib.pyplot as plt
 import logging
+from main.utils import confs
 
 logging.basicConfig(filename='test.log', level=logging.INFO)
 if __name__ == "__main__":
-    if conf.base_path_empty:
+    if confs.base_path_empty:
         crawler = rc.ReportCrawler()
         crawler.crawl()
         crawler.export_json()
 
     # Reading from Json files
-    list_of_authors = pd.read_json('/Users/fleuci/report/data/authors.json')
-    list_of_articlesJson = pd.read_json('/Users/fleuci/report/data/articles.json')
+    list_of_authors = pd.read_json(f"{confs.base_path}authors.json")
+    list_of_articlesJson = pd.read_json(f"{confs.base_path}articles.json")
     list_of_articles = list_of_articlesJson.drop_duplicates(subset='title')
 
     # Getting a list of top 5 authors by number of articles
     authorsCounter = list_of_authors.groupby("name")["article_title"].count()
     top5_authors = authorsCounter.sort_values(ascending=False)
-    logging.info('List of 5 best author for number of written articles: {}'.format(top5_authors[:5]))
+    logging.info('List of 5 best author for number of written articles: \n{}'.format(top5_authors[:5]))
     print(top5_authors[:5])
 
     # Getting a list of top 5 new articles
     top5_articles = pd.DataFrame(list_of_articles, columns=['title', 'dateFormatted'])
     top5_articles.sort_values(by=['dateFormatted'], inplace=True, ascending=False)
-    logging.info('List of 5 most recent articles: {}'.format(top5_articles[:5]))
+    logging.info('List of 5 most recent articles: \n{}'.format(top5_articles[:5]))
     print(top5_articles[:5])
 
     # Plot with counts of 7 popular tags
@@ -44,12 +45,12 @@ if __name__ == "__main__":
         tags = {'tag': key, 'quantity': value}
         keys.append(key)
         values.append(value)
-        with open(f"{conf.base_path}tags.json", "a") as f:
+        with open(f"{confs.base_path}tags.json", "a") as f:
             f.write(json.dumps(tags))
     graph = plt.bar(keys[:7], values[:7])
     plt.xticks(fontsize=6)
     plt.xlabel('Tags')
     plt.ylabel("Tag's quantity")
     plt.title('Top 7 most popular tags')
-    plot = plt.show()
+    plot = plt.savefig()
     logging.info('Bar chart representing the 5 most popular tags')

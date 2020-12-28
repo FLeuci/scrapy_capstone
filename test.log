@@ -44,3 +44,57 @@ INFO:root:List of 5 most recent articles:                                       
 75  A Universal Approach to eCommerce GUI Test Aut...       20201209
 77  How Regular Data Monitoring Creates a Healthy ...       20201203
 INFO:root:Bar chart representing the 5 most popular tags: None
+INFO:scrapy.crawler:Overridden settings:
+{}
+INFO:scrapy.extensions.telnet:Telnet Password: cc3833ac807053c0
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:scrapy.middleware:Enabled item pipelines:
+[]
+INFO:scrapy.core.engine:Spider opened
+INFO:scrapy.extensions.logstats:Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO:scrapy.extensions.telnet:Telnet console listening on 127.0.0.1:6023
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://blog.griddynamics.com/all-authors/> (referer: None)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://blog.griddynamics.com/author/konstantin-perikov/> (referer: https://blog.griddynamics.com/all-authors/)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://blog.griddynamics.com/author/aleksandr-kvasov/> (referer: https://blog.griddynamics.com/all-authors/)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://blog.griddynamics.com/author/maksym-usichenko/> (referer: https://blog.griddynamics.com/all-authors/)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://blog.griddynamics.com/author/jiaye-pan/> (referer: https://blog.griddynamics.com/all-authors/)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://blog.griddynamics.com/author/ivan-petrushin/> (referer: https://blog.griddynamics.com/all-authors/)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://blog.griddynamics.com/author/mdyuldina/> (referer: https://blog.griddynamics.com/all-authors/)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://blog.griddynamics.com/author/ilya-katsov/> (referer: https://blog.griddynamics.com/all-authors/)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://blog.griddynamics.com/author/lilia/> (referer: https://blog.griddynamics.com/all-authors/)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://blog.griddynamics.com/author/mariia-fedorova/> (referer: https://blog.griddynamics.com/all-authors/)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://blog.griddynamics.com/author/maksym/> (referer: https://blog.griddynamics.com/all-authors/)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://blog.griddynamics.com/author/yakov-sirotkin/> (referer: https://blog.griddynamics.com/all-authors/)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://blog.griddynamics.com/author/kirill-evstigneev/> (referer: https://blog.griddynamics.com/all-authors/)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://blog.griddynamics.com/author/kirill/> (referer: https://blog.griddynamics.com/all-authors/)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://blog.griddynamics.com/author/joseph-gorelik/> (referer: https://blog.griddynamics.com/all-authors/)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://blog.griddynamics.com/author/ivan-mamontov/> (referer: https://blog.griddynamics.com/all-authors/)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://blog.griddynamics.com/author/ilia/> (referer: https://blog.griddynamics.com/all-authors/)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://blog.griddynamics.com/author/ihor/> (referer: https://blog.griddynamics.com/all-authors/)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://blog.griddynamics.com/author/victoria-livschitz/> (referer: https://blog.griddynamics.com/all-authors/)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://blog.griddynamics.com/author/victor-samoylov/> (referer: https://blog.griddynamics.com/all-authors/)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://blog.griddynamics.com/author/yaroslav-basovskyy/> (referer: https://blog.griddynamics.com/all-authors/)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://blog.griddynamics.com/author/volodymyr/> (referer: https://blog.griddynamics.com/all-authors/)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://blog.griddynamics.com/author/vladislav-trofimov/> (referer: https://blog.griddynamics.com/all-authors/)
