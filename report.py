@@ -15,8 +15,8 @@ if __name__ == "__main__":
     report_maker = ReportMaker()
 
     # Reading from Json files
-    list_of_authors = pd.read_json('/Users/fleuci/report/data/authors.json')
-    list_of_articlesJson = pd.read_json('/Users/fleuci/report/data/articles.json')
+    list_of_authors = pd.read_json(f'{conf.base_path}authors.json')
+    list_of_articlesJson = pd.read_json(f'{conf.base_path}articles.json')
     list_of_articles = list_of_articlesJson.drop_duplicates(subset='title')
 
     report_maker.authors(list_of_authors)

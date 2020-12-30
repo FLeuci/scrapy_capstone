@@ -15,12 +15,13 @@ class ReportCrawler:
     authors = []
     articles = []
 
+
     def __init__(self):
         import os
-        if os.path.exists(os.path.dirname(conf.confs.base_path)):
+        if os.path.exists(os.path.dirname(conf.base_path)):
             import shutil
-            shutil.rmtree(os.path.dirname(conf.confs.base_path))
-        os.makedirs(os.path.dirname(conf.confs.base_path))
+            shutil.rmtree(os.path.dirname(conf.base_path))
+        os.makedirs(os.path.dirname(conf.base_path))
 
     @staticmethod
     def crawl():
@@ -30,7 +31,7 @@ class ReportCrawler:
         @defer.inlineCallbacks
         def crawl():
             yield runner.crawl(AuthorInfoCrawler)
-            yield runner.crawl(ArticleInfoCrawler)
+            yield runner.crawl(ArticleInfoCrawer)
             reactor.stop()
 
         crawl()
@@ -38,16 +39,16 @@ class ReportCrawler:
 
     @staticmethod
     def export_json():
-        with open(f"{conf.confs.base_path}authors.json", "w") as f:
+        with open(f"{conf.base_path}authors.json", "w") as f:
             f.write(json.dumps(ReportCrawler.authors))
-        with open(f"{conf.confs.base_path}articles.json", "w") as f:
+        with open(f"{conf.base_path}articles.json", "w") as f:
             f.write(json.dumps(ReportCrawler.articles))
 
 
 class AuthorInfoCrawler(CrawlSpider):
     name = 'AuthorInfoCrawler'
     rules = (Rule(LinkExtractor(allow='/author/'), callback='parse'),)
-    start_urls = [f"{conf.confs.gd_base_url}/all-authors/"]
+    start_urls = [f"{conf.gd_base_url}/all-authors/"]
 
     def parse(self, response, **kwargs):
         key_url = response._get_url().rsplit('/')[-2]  # get the author nickname after the last slash
@@ -70,12 +71,12 @@ class AuthorInfoCrawler(CrawlSpider):
                                           'article_url': article_url})
 
 
-class ArticleInfoCrawler(Spider):
+class ArticleInfoCrawer(Spider):
     name = 'ArticleInfoCrawer'
 
     def start_requests(self):
         author_link_list = list(
-            map(lambda obj: (obj['keyUrl'], conf.confs.gd_base_url + obj['article_url'], obj['article_url']),
+            map(lambda obj: (obj['keyUrl'], conf.gd_base_url + obj['article_url'], obj['article_url']),
                 ReportCrawler.authors))
         for link in author_link_list:
             yield Request(url=link[1])
@@ -103,7 +104,8 @@ class ArticleInfoCrawler(Spider):
                 'first160': first_160,
                 'dateFormatted': date_formatted,
                 'tags': tags,
-                'authorUrl': f"{conf.confs.gd_base_url}{full_author_url}",
+                'authorUrl': f"{conf.gd_base_url}{full_author_url}",
                 'authorName': author_fullname,
                 'author_key': full_author_url.rsplit('/')[-2]
             })
+
