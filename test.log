@@ -70,3 +70,385 @@ INFO:root:List of 5 most recent articles:
 75  A Universal Approach to eCommerce GUI Test Aut...       20201209
 77  How Regular Data Monitoring Creates a Healthy ...       20201203
 INFO:root:Bar chart representing the 5 most popular tags
+INFO:root:List of 5 best author for number of written articles: 
+name
+Eugene Steinberg      15
+Ilya Katsov           15
+Max Martynov          15
+Victoria Livschitz    15
+Anton Ovchinnikov     13
+Name: article_title, dtype: int64
+INFO:root:List of 5 best author for number of written articles: 
+name
+Eugene Steinberg      15
+Ilya Katsov           15
+Max Martynov          15
+Victoria Livschitz    15
+Anton Ovchinnikov     13
+Name: article_title, dtype: int64
+INFO:root:List of 5 best author for number of written articles: 
+name
+Eugene Steinberg      15
+Ilya Katsov           15
+Max Martynov          15
+Victoria Livschitz    15
+Anton Ovchinnikov     13
+Name: article_title, dtype: int64
+INFO:root:List of 5 best author for number of written articles: 
+name
+Eugene Steinberg      15
+Ilya Katsov           15
+Max Martynov          15
+Victoria Livschitz    15
+Anton Ovchinnikov     13
+Name: article_title, dtype: int64
+INFO:root:List of 5 best author for number of written articles: 
+name
+Eugene Steinberg      15
+Ilya Katsov           15
+Max Martynov          15
+Victoria Livschitz    15
+Anton Ovchinnikov     13
+Name: article_title, dtype: int64
+INFO:root:List of 5 most recent articles: 
+                                                title  dateFormatted
+91  What Are the Key Challenges in Wearable Device...       20201222
+73  Private Mobile Device Farm as an Indicator of ...       20201218
+52  Virtual backgrounds: real-time deep semantic s...       20201215
+75  A Universal Approach to eCommerce GUI Test Aut...       20201209
+77  How Regular Data Monitoring Creates a Healthy ...       20201203
+INFO:root:List of 5 best author for number of written articles: 
+name
+Eugene Steinberg      15
+Ilya Katsov           15
+Max Martynov          15
+Victoria Livschitz    15
+Anton Ovchinnikov     13
+Name: article_title, dtype: int64
+INFO:root:List of 5 most recent articles: 
+                                                title  dateFormatted
+91  What Are the Key Challenges in Wearable Device...       20201222
+73  Private Mobile Device Farm as an Indicator of ...       20201218
+52  Virtual backgrounds: real-time deep semantic s...       20201215
+75  A Universal Approach to eCommerce GUI Test Aut...       20201209
+77  How Regular Data Monitoring Creates a Healthy ...       20201203
+INFO:root:Bar chart representing the 5 most popular tags
+INFO:root:List of 5 best author for number of written articles: 
+name
+Eugene Steinberg      15
+Ilya Katsov           15
+Max Martynov          15
+Victoria Livschitz    15
+Anton Ovchinnikov     13
+Name: article_title, dtype: int64
+INFO:root:List of 5 most recent articles: 
+                                                title  dateFormatted
+91  What Are the Key Challenges in Wearable Device...       20201222
+73  Private Mobile Device Farm as an Indicator of ...       20201218
+52  Virtual backgrounds: real-time deep semantic s...       20201215
+75  A Universal Approach to eCommerce GUI Test Aut...       20201209
+77  How Regular Data Monitoring Creates a Healthy ...       20201203
+INFO:root:Bar chart representing the 5 most popular tags
+INFO:root:List of 5 best author for number of written articles: 
+name
+Eugene Steinberg      15
+Ilya Katsov           15
+Max Martynov          15
+Victoria Livschitz    15
+Anton Ovchinnikov     13
+Name: article_title, dtype: int64
+INFO:root:List of 5 best author for number of written articles: 
+name
+Eugene Steinberg      15
+Ilya Katsov           15
+Max Martynov          15
+Victoria Livschitz    15
+Anton Ovchinnikov     13
+Name: article_title, dtype: int64
+INFO:root:List of 5 best author for number of written articles: 
+name
+Eugene Steinberg      15
+Ilya Katsov           15
+Max Martynov          15
+Victoria Livschitz    15
+Anton Ovchinnikov     13
+Name: article_title, dtype: int64
+INFO:root:List of 5 best author for number of written articles: 
+name
+Eugene Steinberg      15
+Ilya Katsov           15
+Max Martynov          15
+Victoria Livschitz    15
+Anton Ovchinnikov     13
+Name: article_title, dtype: int64
+INFO:root:List of 5 best author for number of written articles: 
+name
+Eugene Steinberg      15
+Ilya Katsov           15
+Max Martynov          15
+Victoria Livschitz    15
+Anton Ovchinnikov     13
+Name: article_title, dtype: int64
+INFO:root:List of 5 best author for number of written articles: 
+name
+Eugene Steinberg      15
+Ilya Katsov           15
+Max Martynov          15
+Victoria Livschitz    15
+Anton Ovchinnikov     13
+Name: article_title, dtype: int64
+INFO:root:List of 5 best author for number of written articles: 
+name
+Eugene Steinberg      15
+Ilya Katsov           15
+Max Martynov          15
+Victoria Livschitz    15
+Anton Ovchinnikov     13
+Name: article_title, dtype: int64
+INFO:root:List of 5 best author for number of written articles: 
+name
+Eugene Steinberg      15
+Ilya Katsov           15
+Max Martynov          15
+Victoria Livschitz    15
+Anton Ovchinnikov     13
+Name: article_title, dtype: int64
+INFO:root:List of 5 best author for number of written articles: 
+name
+Eugene Steinberg      15
+Ilya Katsov           15
+Max Martynov          15
+Victoria Livschitz    15
+Anton Ovchinnikov     13
+Name: article_title, dtype: int64
+INFO:root:List of 5 best author for number of written articles: 
+name
+Eugene Steinberg      15
+Ilya Katsov           15
+Max Martynov          15
+Victoria Livschitz    15
+Anton Ovchinnikov     13
+Name: article_title, dtype: int64
+INFO:root:List of 5 best author for number of written articles: 
+name
+Eugene Steinberg      15
+Ilya Katsov           15
+Max Martynov          15
+Victoria Livschitz    15
+Anton Ovchinnikov     13
+Name: article_title, dtype: int64
+INFO:root:List of 5 best author for number of written articles: 
+name
+Eugene Steinberg      15
+Ilya Katsov           15
+Max Martynov          15
+Victoria Livschitz    15
+Anton Ovchinnikov     13
+Name: article_title, dtype: int64
+INFO:root:List of 5 best author for number of written articles: 
+name
+Eugene Steinberg      15
+Ilya Katsov           15
+Max Martynov          15
+Victoria Livschitz    15
+Anton Ovchinnikov     13
+Name: article_title, dtype: int64
+INFO:root:List of 5 best author for number of written articles: 
+name
+Eugene Steinberg      15
+Ilya Katsov           15
+Max Martynov          15
+Victoria Livschitz    15
+Anton Ovchinnikov     13
+Name: article_title, dtype: int64
+INFO:root:List of 5 best author for number of written articles: 
+name
+Eugene Steinberg      15
+Ilya Katsov           15
+Max Martynov          15
+Victoria Livschitz    15
+Anton Ovchinnikov     13
+Name: article_title, dtype: int64
+INFO:root:List of 5 best author for number of written articles: 
+name
+Eugene Steinberg      15
+Ilya Katsov           15
+Max Martynov          15
+Victoria Livschitz    15
+Anton Ovchinnikov     13
+Name: article_title, dtype: int64
+INFO:root:List of 5 best author for number of written articles: 
+name
+Eugene Steinberg      15
+Ilya Katsov           15
+Max Martynov          15
+Victoria Livschitz    15
+Anton Ovchinnikov     13
+Name: article_title, dtype: int64
+INFO:root:List of 5 best author for number of written articles: 
+name
+Eugene Steinberg      15
+Ilya Katsov           15
+Max Martynov          15
+Victoria Livschitz    15
+Anton Ovchinnikov     13
+Name: article_title, dtype: int64
+INFO:root:List of 5 best author for number of written articles: 
+name
+Eugene Steinberg      15
+Ilya Katsov           15
+Max Martynov          15
+Victoria Livschitz    15
+Anton Ovchinnikov     13
+Name: article_title, dtype: int64
+INFO:root:List of 5 best author for number of written articles: 
+name
+Eugene Steinberg      15
+Ilya Katsov           15
+Max Martynov          15
+Victoria Livschitz    15
+Anton Ovchinnikov     13
+Name: article_title, dtype: int64
+INFO:root:List of 5 most recent articles: 
+                                                title  dateFormatted
+91  What Are the Key Challenges in Wearable Device...       20201222
+73  Private Mobile Device Farm as an Indicator of ...       20201218
+52  Virtual backgrounds: real-time deep semantic s...       20201215
+75  A Universal Approach to eCommerce GUI Test Aut...       20201209
+77  How Regular Data Monitoring Creates a Healthy ...       20201203
+INFO:root:Bar chart representing the 5 most popular tags
+INFO:root:List of 5 best author for number of written articles: 
+name
+Eugene Steinberg      15
+Ilya Katsov           15
+Max Martynov          15
+Victoria Livschitz    15
+Anton Ovchinnikov     13
+Name: article_title, dtype: int64
+INFO:root:List of 5 best author for number of written articles: 
+name
+Eugene Steinberg      15
+Ilya Katsov           15
+Max Martynov          15
+Victoria Livschitz    15
+Anton Ovchinnikov     13
+Name: article_title, dtype: int64
+INFO:root:List of 5 most recent articles: 
+                                                title  dateFormatted
+91  What Are the Key Challenges in Wearable Device...       20201222
+73  Private Mobile Device Farm as an Indicator of ...       20201218
+52  Virtual backgrounds: real-time deep semantic s...       20201215
+75  A Universal Approach to eCommerce GUI Test Aut...       20201209
+77  How Regular Data Monitoring Creates a Healthy ...       20201203
+INFO:root:Bar chart representing the 5 most popular tags
+INFO:root:List of 5 best author for number of written articles: 
+name
+Eugene Steinberg      15
+Ilya Katsov           15
+Max Martynov          15
+Victoria Livschitz    15
+Anton Ovchinnikov     13
+Name: article_title, dtype: int64
+INFO:root:List of 5 most recent articles: 
+                                                title  dateFormatted
+91  What Are the Key Challenges in Wearable Device...       20201222
+73  Private Mobile Device Farm as an Indicator of ...       20201218
+52  Virtual backgrounds: real-time deep semantic s...       20201215
+75  A Universal Approach to eCommerce GUI Test Aut...       20201209
+77  How Regular Data Monitoring Creates a Healthy ...       20201203
+INFO:root:Bar chart representing the 5 most popular tags
+INFO:root:List of 5 best author for number of written articles: 
+name
+Eugene Steinberg      15
+Ilya Katsov           15
+Max Martynov          15
+Victoria Livschitz    15
+Anton Ovchinnikov     13
+Name: article_title, dtype: int64
+INFO:root:List of 5 most recent articles: 
+                                                title  dateFormatted
+91  What Are the Key Challenges in Wearable Device...       20201222
+73  Private Mobile Device Farm as an Indicator of ...       20201218
+52  Virtual backgrounds: real-time deep semantic s...       20201215
+75  A Universal Approach to eCommerce GUI Test Aut...       20201209
+77  How Regular Data Monitoring Creates a Healthy ...       20201203
+INFO:root:List of 5 best author for number of written articles: 
+name
+Eugene Steinberg      15
+Ilya Katsov           15
+Max Martynov          15
+Victoria Livschitz    15
+Anton Ovchinnikov     13
+Name: article_title, dtype: int64
+INFO:root:List of 5 most recent articles: 
+                                                title  dateFormatted
+91  What Are the Key Challenges in Wearable Device...       20201222
+73  Private Mobile Device Farm as an Indicator of ...       20201218
+52  Virtual backgrounds: real-time deep semantic s...       20201215
+75  A Universal Approach to eCommerce GUI Test Aut...       20201209
+77  How Regular Data Monitoring Creates a Healthy ...       20201203
+INFO:root:Bar chart representing the 5 most popular tags
+INFO:root:List of 5 best author for number of written articles: 
+name
+Eugene Steinberg      15
+Ilya Katsov           15
+Max Martynov          15
+Victoria Livschitz    15
+Anton Ovchinnikov     13
+Name: article_title, dtype: int64
+INFO:root:List of 5 most recent articles: 
+                                                title  dateFormatted
+91  What Are the Key Challenges in Wearable Device...       20201222
+73  Private Mobile Device Farm as an Indicator of ...       20201218
+52  Virtual backgrounds: real-time deep semantic s...       20201215
+75  A Universal Approach to eCommerce GUI Test Aut...       20201209
+77  How Regular Data Monitoring Creates a Healthy ...       20201203
+INFO:root:Bar chart representing the 5 most popular tags
+INFO:root:List of 5 best author for number of written articles: 
+name
+Eugene Steinberg      15
+Ilya Katsov           15
+Max Martynov          15
+Victoria Livschitz    15
+Anton Ovchinnikov     13
+Name: article_title, dtype: int64
+INFO:root:List of 5 most recent articles: 
+                                                title  dateFormatted
+91  What Are the Key Challenges in Wearable Device...       20201222
+73  Private Mobile Device Farm as an Indicator of ...       20201218
+52  Virtual backgrounds: real-time deep semantic s...       20201215
+75  A Universal Approach to eCommerce GUI Test Aut...       20201209
+77  How Regular Data Monitoring Creates a Healthy ...       20201203
+INFO:root:Bar chart representing the 5 most popular tags
+INFO:root:List of 5 best author for number of written articles: 
+name
+Eugene Steinberg      15
+Ilya Katsov           15
+Max Martynov          15
+Victoria Livschitz    15
+Anton Ovchinnikov     13
+Name: article_title, dtype: int64
+INFO:root:List of 5 most recent articles: 
+                                                title  dateFormatted
+91  What Are the Key Challenges in Wearable Device...       20201222
+73  Private Mobile Device Farm as an Indicator of ...       20201218
+52  Virtual backgrounds: real-time deep semantic s...       20201215
+75  A Universal Approach to eCommerce GUI Test Aut...       20201209
+77  How Regular Data Monitoring Creates a Healthy ...       20201203
+INFO:root:Bar chart representing the 5 most popular tags
+INFO:root:List of 5 best author for number of written articles: 
+name
+Eugene Steinberg      15
+Ilya Katsov           15
+Max Martynov          15
+Victoria Livschitz    15
+Anton Ovchinnikov     13
+Name: article_title, dtype: int64
+INFO:root:List of 5 most recent articles: 
+                                                title  dateFormatted
+91  What Are the Key Challenges in Wearable Device...       20201222
+73  Private Mobile Device Farm as an Indicator of ...       20201218
+52  Virtual backgrounds: real-time deep semantic s...       20201215
+75  A Universal Approach to eCommerce GUI Test Aut...       20201209
+77  How Regular Data Monitoring Creates a Healthy ...       20201203
+INFO:root:Bar chart representing the 5 most popular tags
