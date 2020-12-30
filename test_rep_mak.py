@@ -22,5 +22,5 @@ def test_articles():
 def test_tags():
     report_maker = ReportMaker()
     # expected = {'quantity': 1, 'tag': 'tag4'}
-    expected = [['tag1', 2], ['tag2',2], ['tag3', 1], ['tag4', 1]]
+    expected = [('tag1', 2), ('tag2',2), ('tag3', 1), ('tag4', 1)]
     assert report_maker.plotting(list_of_articles) == expected
