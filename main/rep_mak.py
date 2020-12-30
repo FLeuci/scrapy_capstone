@@ -1,9 +1,10 @@
 import json
-import collections
-import matplotlib.pyplot as plt
-import main.utils as conf
-import pandas as pd
 import logging
+
+import matplotlib.pyplot as plt
+import pandas as pd
+
+import main.utils as conf
 
 
 class ReportMaker:
@@ -25,23 +26,15 @@ class ReportMaker:
 
     # Plot with counts of 7 popular tags
     def plotting(self, list_of_articles):
-        global tags
-        all_tags = list(list_of_articles.loc[:, "tags"])
-        count = []
-        for tag in all_tags:
-            for i in tag:
-                count.append(i)
+        from main.utils import flatten, reduce_by_key
 
-        tag_count = collections.Counter(count)
-        keys = []
-        values = []
-        for key, value in sorted(tag_count.items(), key=lambda value: value[1], reverse=True):
-            tags = {'tag': key, 'quantity': value}
-            keys.append(key)
-            values.append(value)
-            with open(f"{conf.base_path}tags.json", "a") as f:
-                f.write(json.dumps(tags))
-        plt.bar(keys[:7], values[:7])
+        all_tags = list(list_of_articles.loc[:, "tags"])
+
+        tags_dict = reduce_by_key(flatten(all_tags, lambda single_tag: (single_tag, 1)))
+        best_tags_dict_sorted = sorted(tags_dict.items(), key=lambda x: x[1], reverse=True)[:7]
+        with open(f"{conf.base_path}tags.json", "w") as f:
+            f.write(json.dumps(best_tags_dict_sorted))
+        plt.bar([kv[0] for kv in best_tags_dict_sorted], [kv[1] for kv in best_tags_dict_sorted])
         plt.xticks(fontsize=6)
         plt.xlabel('Tags')
         plt.ylabel("Tag's quantity")
@@ -50,7 +43,7 @@ class ReportMaker:
         plt.savefig(f"{conf.base_path}plot.png")
         plt.show()
 
-        return tags
+        return best_tags_dict_sorted
 
     def to_array(self, pandas_df):
         df_as_dict = pandas_df.to_dict()
