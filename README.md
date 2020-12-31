@@ -25,4 +25,4 @@ Then generate a report with this information:
     https://app.pluralsight.com/library/courses/data-visualization-with-python-introduction/table-of-contents
     https://app.pluralsight.com/library/courses/python-fundamentals/table-of-contents
 
-
+<img width="633" alt="Screenshot" src="https://user-images.githubusercontent.com/75839583/103350362-025ffd00-4aa0-11eb-8cce-d58d50f8110b.png">

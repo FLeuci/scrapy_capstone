@@ -1,5 +1,4 @@
 import json
-import pandas as pd
 
 from scrapy import Selector, Request
 from scrapy.crawler import CrawlerRunner
@@ -12,11 +11,16 @@ import main.utils as conf
 
 
 class ReportCrawler:
+    """
+
+    """
     authors = []
     articles = []
 
-
     def __init__(self):
+        """
+
+        """
         import os
         if os.path.exists(os.path.dirname(conf.base_path)):
             import shutil
@@ -39,6 +43,9 @@ class ReportCrawler:
 
     @staticmethod
     def export_json():
+        """
+        Export the results obtained from the crawling into JSON files
+        """
         with open(f"{conf.base_path}authors.json", "w") as f:
             f.write(json.dumps(ReportCrawler.authors))
         with open(f"{conf.base_path}articles.json", "w") as f:
@@ -46,11 +53,17 @@ class ReportCrawler:
 
 
 class AuthorInfoCrawler(CrawlSpider):
+    """
+    Take all information needed about authors
+    """
     name = 'AuthorInfoCrawler'
     rules = (Rule(LinkExtractor(allow='/author/'), callback='parse'),)
     start_urls = [f"{conf.gd_base_url}/all-authors/"]
 
     def parse(self, response, **kwargs):
+        """
+        Extracts all the data from the crawled pages and appends them to authors list
+        """
         key_url = response._get_url().rsplit('/')[-2]  # get the author nickname after the last slash
         name = response.xpath('//*[@id="woe"]/div[2]/div/div[1]/div[2]/h3/text()').extract_first()
         job_title = response.xpath('//*[@id="woe"]/div[2]/div/div[1]/div[2]/p/text()').extract_first()
@@ -72,9 +85,15 @@ class AuthorInfoCrawler(CrawlSpider):
 
 
 class ArticleInfoCrawer(Spider):
+    """
+    Take all information needed about articles
+    """
     name = 'ArticleInfoCrawer'
 
     def start_requests(self):
+        """
+        Crawls each authors pages starting from all-authors main page
+        """
         author_link_list = list(
             map(lambda obj: (obj['keyUrl'], conf.gd_base_url + obj['article_url'], obj['article_url']),
                 ReportCrawler.authors))
@@ -82,6 +101,9 @@ class ArticleInfoCrawer(Spider):
             yield Request(url=link[1])
 
     def parse(self, response, **kwargs):
+        """
+        Extracts all the data from the crawled pages and appends them to articles list
+        """
         title = response.xpath('//*[@id="wrap"]/h1/text()').extract_first()
         url_to_full_version = response._get_url()
         first_160 = ''.join(response.xpath('//*[@id="woe"]/section/div/p/text()').extract())[:160]
@@ -108,4 +130,3 @@ class ArticleInfoCrawer(Spider):
                 'authorName': author_fullname,
                 'author_key': full_author_url.rsplit('/')[-2]
             })
-

@@ -22,5 +22,3 @@ if __name__ == "__main__":
     report_maker.authors(list_of_authors)
     report_maker.articles(list_of_articles)
     report_maker.plotting(list_of_articles)
-
-
