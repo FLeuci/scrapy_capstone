@@ -1,5 +1,5 @@
 import json
-
+import os
 from scrapy import Selector, Request
 from scrapy.crawler import CrawlerRunner
 from scrapy.linkextractors import LinkExtractor
@@ -12,20 +12,17 @@ import main.utils as conf
 
 class ReportCrawler:
     """
-
+    Wrapper class responsible of launching spiders needed for generating report
     """
     authors = []
     articles = []
 
     def __init__(self):
         """
-
+        Create a directory representing the value inside @{main.utils.base_path} if not exists
         """
-        import os
-        if os.path.exists(os.path.dirname(conf.base_path)):
-            import shutil
-            shutil.rmtree(os.path.dirname(conf.base_path))
-        os.makedirs(os.path.dirname(conf.base_path))
+        if not os.path.exists(os.path.dirname(conf.base_path)):
+            os.makedirs(os.path.dirname(conf.base_path))
 
     @staticmethod
     def crawl():
@@ -92,7 +89,7 @@ class ArticleInfoCrawer(Spider):
 
     def start_requests(self):
         """
-        Crawls each authors pages starting from all-authors main page
+        Crawls each authors pages starting from all-authors main page stored in authors report
         """
         author_link_list = list(
             map(lambda obj: (obj['keyUrl'], conf.gd_base_url + obj['article_url'], obj['article_url']),

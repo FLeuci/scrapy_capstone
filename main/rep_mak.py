@@ -1,4 +1,4 @@
-import json
+
 import logging
 
 import matplotlib.pyplot as plt
@@ -9,7 +9,7 @@ import main.utils as conf
 
 class ReportMaker:
     """
-     This class will create a report that will show us:
+     This class creates a report containing:
 
     - Top-5 Authors,
     - Top-5 New Articles,
@@ -18,7 +18,7 @@ class ReportMaker:
 
     def authors(self, list_of_authors):
         """
-        Return the top 5 authors by number of articles
+        Return the top 5 authors by number of articles in the format list of tuple2
         """
         authors_counter = list_of_authors.groupby("name")["article_title"].count()
         top5_authors = authors_counter.sort_values(ascending=False)
@@ -27,7 +27,7 @@ class ReportMaker:
 
     def articles(self, list_of_articles):
         """
-        Return the top 5 most recent articles
+        Return the top 5 most recent articles in the format list of tuple2
         """
         top5_articles = list_of_articles.loc[:, ['title', 'dateFormatted']]
         top5_articles_sorted = top5_articles.sort_values(by=['dateFormatted'], ascending=False)
@@ -38,16 +38,15 @@ class ReportMaker:
     @staticmethod
     def plotting(list_of_articles):
         """
-        Return a list of the 7 most popular tags and plot the relative bar chart
+        Return a list of the 7 most popular tags and save the plot with the relative bar chart under base_path
         """
-        from main.utils import flatten, reduce_by_key
+        from main.utils import flatten, count_by_key
 
         all_tags = list(list_of_articles.loc[:, "tags"])
 
-        tags_dict = reduce_by_key(flatten(all_tags, lambda single_tag: (single_tag, 1)))
+        tags_dict = count_by_key(flatten(all_tags, lambda single_tag: (single_tag, 1)))
         best_tags_dict_sorted = sorted(tags_dict.items(), key=lambda x: x[1], reverse=True)[:7]
-        with open(f"{conf.base_path}tags.json", "w") as f:
-            f.write(json.dumps(best_tags_dict_sorted))
+
         plt.bar([kv[0] for kv in best_tags_dict_sorted], [kv[1] for kv in best_tags_dict_sorted])
         plt.xticks(fontsize=6)
         plt.xlabel('Tags')
@@ -55,14 +54,14 @@ class ReportMaker:
         plt.title('Top 7 most popular tags')
         logging.info('Bar chart representing the 5 most popular tags')
         plt.savefig(f"{conf.base_path}plot.png")
-        # plt.show()
 
         return best_tags_dict_sorted
 
     @staticmethod
     def to_array(pandas_df):
         """
-        Transform a DataFrame into a dict
+        - Transform a DataFrame into a dict
+        - Return a dict in the format list of key, values
         """
         df_as_dict = pandas_df.to_dict()
         return list(zip(df_as_dict.keys(), df_as_dict.values()))

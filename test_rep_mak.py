@@ -1,8 +1,8 @@
 from main.rep_mak import ReportMaker
 import pandas as pd
 
-list_of_authors = pd.read_json('/Users/fleuci/report/data/test-authors.json')
-list_of_articlesJson = pd.read_json('/Users/fleuci/report/data/test-articles.json')
+list_of_authors = pd.read_json('/test_data/test-authors.json')
+list_of_articlesJson = pd.read_json('/test_data/test-articles.json')
 list_of_articles = list_of_articlesJson.drop_duplicates(subset='title')
 
 
