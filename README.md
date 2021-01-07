@@ -11,7 +11,7 @@
     - matplotlib
     - pandas
     - os
-    - JSON
+    - yaml
 ## Features
 The aim of this project is to create a Web Crawler that will parse https://blog.griddynamics.com/,
 obtain articles and author information from it.
@@ -26,3 +26,22 @@ Then generate a report with this information:
     https://app.pluralsight.com/library/courses/python-fundamentals/table-of-contents
 
 <img width="633" alt="Screenshot" src="https://user-images.githubusercontent.com/75839583/103350362-025ffd00-4aa0-11eb-8cce-d58d50f8110b.png">
+
+## Environments setup and first run
+Before to run your code be sure that the following libraries are present, otherwise run the following commands:
+```
+pip3 install scrapy
+pip3 install matplotlib
+pip3 install pandas
+pip3 install yaml
+```
+
+Moreover go to the file `conf.yml` and replace the basepath with yours
+
+Finally run the following instruction from the terminal in order to execute the report generator
+```
+python3 report.py
+```
+
+
+

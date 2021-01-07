@@ -1,9 +1,12 @@
 import re
 from datetime import datetime
 import os
+import yaml
 
-gd_base_url = "https://blog.griddynamics.com"
-base_path = "/Users/fleuci/PycharmProjects/scrapy_capstone/data/"  # todo change me with local
+with open("conf.yml") as f:
+    confs = yaml.safe_load(f)
+gd_base_url = confs.get("gd_base_url")
+base_path = confs.get("file_base_path")
 
 base_path_empty = len(os.listdir(base_path)) == 0 if os.path.isdir(base_path) else True
 
