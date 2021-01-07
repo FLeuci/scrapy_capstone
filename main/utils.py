@@ -3,7 +3,7 @@ from datetime import datetime
 import os
 
 gd_base_url = "https://blog.griddynamics.com"
-base_path = "/Users/fleuci/report/data/"  # todo change me with local
+base_path = "/Users/fleuci/PycharmProjects/scrapy_capstone/data/"  # todo change me with local
 
 base_path_empty = len(os.listdir(base_path)) == 0 if os.path.isdir(base_path) else True
 
