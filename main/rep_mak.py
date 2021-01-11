@@ -53,7 +53,7 @@ class ReportMaker:
         plt.ylabel("Tag's quantity")
         plt.title('Top 7 most popular tags')
         logging.info('Bar chart representing the 5 most popular tags')
-        plt.savefig(f"{conf.base_path}plot.png")
+        plt.savefig(f"{conf.__file__}plot.png")
 
         return best_tags_dict_sorted
 

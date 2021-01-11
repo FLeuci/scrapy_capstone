@@ -21,13 +21,17 @@ class ReportCrawler:
         """
         Create a directory representing the value inside @{main.utils.base_path} if not exists
         """
-        if not os.path.exists(os.path.dirname(conf.base_path)):
-            os.makedirs(os.path.dirname(conf.base_path))
+        if not os.path.exists(os.path.dirname(conf.__file__)):
+            os.makedirs(os.path.dirname(conf.__file__))
 
     @staticmethod
     def crawl():
         configure_logging()
         runner = CrawlerRunner()
+
+        """
+        Make a function that reads from last_articles_numbers file and compare with actual
+        """
 
         @defer.inlineCallbacks
         def crawl():
@@ -43,10 +47,8 @@ class ReportCrawler:
         """
         Export the results obtained from the crawling into JSON files
         """
-        with open(f"{conf.base_path}authors.json", "w") as f:
-            f.write(json.dumps(ReportCrawler.authors))
-        with open(f"{conf.base_path}articles.json", "w") as f:
-            f.write(json.dumps(ReportCrawler.articles))
+        conf.write_in_data("authors.json", json.dumps(ReportCrawler.authors))
+        conf.write_in_data("articles.json", json.dumps(ReportCrawler.articles))
 
 
 class AuthorInfoCrawler(CrawlSpider):

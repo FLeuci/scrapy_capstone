@@ -30,10 +30,7 @@ Then generate a report with this information:
 ## Environments setup and first run
 Before to run your code be sure that the following libraries are present, otherwise run the following commands:
 ```
-pip3 install scrapy
-pip3 install matplotlib
-pip3 install pandas
-pip3 install yaml
+pip3 install -r requirements.txt
 ```
 
 Moreover go to the file `conf.yml` and replace the basepath with yours
