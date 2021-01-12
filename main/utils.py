@@ -1,16 +1,12 @@
-import json
 import re
 from datetime import datetime
 import os
-import yaml
 import pandas as pd
 
-with open("conf.yml") as f:
-    confs = yaml.safe_load(f)
-gd_base_url = confs.get("gd_base_url")
-base_path = confs.get(os.path.dirname(__file__)) + "/data"
-
-base_path_empty = len(os.listdir(__file__)) == 0 if os.path.isdir(__file__) else True
+gd_base_url = "https://blog.griddynamics.com"
+base_path = os.path.dirname(__file__) + "/data"
+if not os.path.exists(base_path):
+    os.mkdir(base_path)
 
 
 def clean_records_regex(value):
@@ -62,15 +58,19 @@ def count_by_key(list_of_tuple_2):
             res.update({tuple_2[0]: 1})
     return res
 
+
 def write_in_data(path, content):
     """
-    Fai funzione che che salva in main/data
+    Saves in main/data
     """
     with open(f"{base_path}/{path}", "w") as f:
         f.write(content)
 
 def read_from_data(path):
     """
-    Fai funzione che che legge json da main/data
+    Reads from main/data
     """
     pd.read_json(f'{base_path}/{path}')
+
+def path_exist(path):
+    return os.path.isfile(f'{base_path}/{path}')

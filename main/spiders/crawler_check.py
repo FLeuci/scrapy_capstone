@@ -1,11 +1,10 @@
 import json
 
-from scrapy.crawler import CrawlerRunner
+from scrapy.crawler import CrawlerRunner, CrawlerProcess
 from scrapy.linkextractors import LinkExtractor
 from scrapy.spiders import Rule, CrawlSpider
 from scrapy.utils.log import configure_logging
 from twisted.internet import reactor, defer
-import main.utils as conf
 
 
 class CheckerCrawler:
@@ -14,15 +13,18 @@ class CheckerCrawler:
     @staticmethod
     def crawl():
         configure_logging()
-        runner = CrawlerRunner()
+        # runner = CrawlerRunner()
+        process = CrawlerProcess()
 
-        @defer.inlineCallbacks
+        # @defer.inlineCallbacks
         def crawl():
-            yield runner.crawl(Checker)
-            reactor.stop()
+            # yield runner.crawl(Checker)
+            # reactor.stop()
+            process.crawl(Checker)
+            process.start()
 
         crawl()
-        reactor.run()
+        # reactor.run()
 
 
 class Checker(CrawlSpider):
@@ -34,8 +36,4 @@ class Checker(CrawlSpider):
         titles = response.xpath('//*[@id="woe"]/div[2]/div/div[2]/div/a/text()').extract()
         for title in titles:
             CheckerCrawler.all_articles.append(title)
-        #         date_title_part = response.xpath('//*[@id="woe"]/div[2]/div/div[2]/div[position() > 1]')
-        #         for row in date_title_part:
-        #             row_extracted = row.extract()
-        #             article_title = Selector(text=row_extracted).xpath('///a/text()').extract_first()
-        #             Checker.all_articles.append(article_title)
+

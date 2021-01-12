@@ -1,10 +1,11 @@
-
+import json
 import logging
 
 import matplotlib.pyplot as plt
 import pandas as pd
+from utils import flatten, count_by_key
+import utils as conf
 
-import main.utils as conf
 
 
 class ReportMaker:
@@ -35,12 +36,15 @@ class ReportMaker:
         series = pd.Series(top5_articles_sorted['dateFormatted'].values, index=top5_articles_sorted['title'])
         return self.to_array(series[:5])
 
+    def all_articles(self, list_of_articles):
+        all_articles = list_of_articles.loc[:, ['title']]
+        conf.write_in_data("all_articles.json", json.dumps(all_articles))
+
     @staticmethod
     def plotting(list_of_articles):
         """
         Return a list of the 7 most popular tags and save the plot with the relative bar chart under base_path
         """
-        from main.utils import flatten, count_by_key
 
         all_tags = list(list_of_articles.loc[:, "tags"])
 

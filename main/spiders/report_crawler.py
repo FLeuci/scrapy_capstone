@@ -1,13 +1,13 @@
 import json
 import os
 from scrapy import Selector, Request
-from scrapy.crawler import CrawlerRunner
+from scrapy.crawler import CrawlerRunner, CrawlerProcess
 from scrapy.linkextractors import LinkExtractor
 from scrapy.spiders import CrawlSpider, Rule, Spider
 from scrapy.utils.log import configure_logging
-from twisted.internet import reactor, defer
+from twisted.internet import reactor, defer, process
 
-import main.utils as conf
+import utils as conf
 
 
 class ReportCrawler:
@@ -17,30 +17,27 @@ class ReportCrawler:
     authors = []
     articles = []
 
-    def __init__(self):
-        """
-        Create a directory representing the value inside @{main.utils.base_path} if not exists
-        """
-        if not os.path.exists(os.path.dirname(conf.__file__)):
-            os.makedirs(os.path.dirname(conf.__file__))
-
     @staticmethod
     def crawl():
         configure_logging()
-        runner = CrawlerRunner()
+        # runner = CrawlerRunner()
 
         """
         Make a function that reads from last_articles_numbers file and compare with actual
         """
 
-        @defer.inlineCallbacks
+        # @defer.inlineCallbacks
         def crawl():
-            yield runner.crawl(AuthorInfoCrawler)
-            yield runner.crawl(ArticleInfoCrawer)
-            reactor.stop()
+            # yield runner.crawl(AuthorInfoCrawler)
+            # yield runner.crawl(ArticleInfoCrawer)
+            # reactor.stop()
+            process = CrawlerProcess()
+            process.crawl(AuthorInfoCrawler)
+            process.crawl(ArticleInfoCrawer)
+            process.start()
 
         crawl()
-        reactor.run()  # the script will block here until the last crawl call is finished
+        # reactor.run()  # the script will block here until the last crawl call is finished
 
     @staticmethod
     def export_json():
@@ -49,7 +46,7 @@ class ReportCrawler:
         """
         conf.write_in_data("authors.json", json.dumps(ReportCrawler.authors))
         conf.write_in_data("articles.json", json.dumps(ReportCrawler.articles))
-
+        conf.write_in_data("all_articles.json", json.dumps(ReportCrawler.articles))
 
 class AuthorInfoCrawler(CrawlSpider):
     """
