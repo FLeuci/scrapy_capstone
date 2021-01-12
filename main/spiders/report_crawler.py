@@ -17,6 +17,9 @@ class ReportCrawler:
     authors = []
     articles = []
 
+    latest_saved_post_link = "PRENDI URL LATEST POST"
+    latest_post_link = "SALVA QUI URL LATEST POST CALCOLATO"
+
     @staticmethod
     def crawl():
         configure_logging()
@@ -32,6 +35,7 @@ class ReportCrawler:
             # yield runner.crawl(ArticleInfoCrawer)
             # reactor.stop()
             process = CrawlerProcess()
+            process.crawl(Checker)
             process.crawl(AuthorInfoCrawler)
             process.crawl(ArticleInfoCrawer)
             process.start()
@@ -47,6 +51,17 @@ class ReportCrawler:
         conf.write_in_data("authors.json", json.dumps(ReportCrawler.authors))
         conf.write_in_data("articles.json", json.dumps(ReportCrawler.articles))
         conf.write_in_data("all_articles.json", json.dumps(ReportCrawler.articles))
+
+
+class Checker(CrawlSpider):
+    name = 'ArticlesCheckCrawler'
+    start_urls = ['https://blog.griddynamics.com/all-authors/']
+    rules = (Rule(LinkExtractor(allow='/author/'), callback='parse'),)
+
+    def parse(self, response, **kwargs):
+        title = response.xpath('//*[@id="woe"]/section[4]/div/div[1]/a/article/div/h4/text()').extract_first()
+        ReportCrawler.latest_post_link = title
+
 
 class AuthorInfoCrawler(CrawlSpider):
     """
