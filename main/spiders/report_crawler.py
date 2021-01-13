@@ -32,12 +32,12 @@ class ReportCrawler:
         # @defer.inlineCallbacks
         def crawl():
             # yield runner.crawl(AuthorInfoCrawler)
-            # yield runner.crawl(ArticleInfoCrawer)
+            # yield runner.crawl(ArticleInfoCrawler)
             # reactor.stop()
             process = CrawlerProcess()
             process.crawl(Checker)
             process.crawl(AuthorInfoCrawler)
-            process.crawl(ArticleInfoCrawer)
+            process.crawl(ArticleInfoCrawler)
             process.start()
 
         crawl()
@@ -95,7 +95,7 @@ class AuthorInfoCrawler(CrawlSpider):
                                           'article_url': article_url})
 
 
-class ArticleInfoCrawer(Spider):
+class ArticleInfoCrawler(Spider):
     """
     Take all information needed about articles
     """
