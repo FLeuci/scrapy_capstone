@@ -7,7 +7,8 @@ from scrapy.spiders import CrawlSpider, Rule, Spider
 from scrapy.utils.log import configure_logging
 from twisted.internet import reactor, defer, process
 
-import utils as conf
+from main import utils as conf
+
 
 
 class ReportCrawler:
@@ -16,6 +17,7 @@ class ReportCrawler:
     """
     authors = []
     articles = []
+    all_articles =[]
 
     latest_saved_post_link = "PRENDI URL LATEST POST"
     latest_post_link = "SALVA QUI URL LATEST POST CALCOLATO"
@@ -50,7 +52,7 @@ class ReportCrawler:
         """
         conf.write_in_data("authors.json", json.dumps(ReportCrawler.authors))
         conf.write_in_data("articles.json", json.dumps(ReportCrawler.articles))
-        conf.write_in_data("all_articles.json", json.dumps(ReportCrawler.articles))
+        conf.write_in_data("all_articles.json", json.dumps(ReportCrawler.all_articles))
 
 
 class Checker(CrawlSpider):
@@ -59,8 +61,9 @@ class Checker(CrawlSpider):
     rules = (Rule(LinkExtractor(allow='/author/'), callback='parse'),)
 
     def parse(self, response, **kwargs):
-        title = response.xpath('//*[@id="woe"]/section[4]/div/div[1]/a/article/div/h4/text()').extract_first()
-        ReportCrawler.latest_post_link = title
+        titles = response.xpath('//*[@id="woe"]/div[2]/div/div[2]/div/a/text()').extract()
+        for title in titles:
+            ReportCrawler.all_articles.append(title)
 
 
 class AuthorInfoCrawler(CrawlSpider):
@@ -86,6 +89,7 @@ class AuthorInfoCrawler(CrawlSpider):
             date_formatted = conf.parse_dtts(date, '%B %d, %Y')
             article_title = Selector(text=row_extracted).xpath('///a/text()').extract_first()
             article_url = Selector(text=row_extracted).xpath('///a/@href').extract_first()
+
             ReportCrawler.authors.append({'keyUrl': key_url,
                                           'name': name,
                                           'jobTitle': job_title,
@@ -99,7 +103,9 @@ class ArticleInfoCrawler(Spider):
     """
     Take all information needed about articles
     """
-    name = 'ArticleInfoCrawer'
+    name = 'ArticleInfoCrawler'
+    #rules = (Rule(LinkExtractor(allow='/author/'), callback='parse'),)
+    #start_urls = [f"{conf.gd_base_url}/all-authors/"]
 
     def start_requests(self):
         """

@@ -3,8 +3,8 @@ import logging
 
 import matplotlib.pyplot as plt
 import pandas as pd
-from utils import flatten, count_by_key
-import utils as conf
+from main.utils import flatten, count_by_key
+import main.utils as conf
 
 
 
@@ -38,7 +38,7 @@ class ReportMaker:
 
     def all_articles(self, list_of_articles):
         all_articles = list_of_articles.loc[:, ['title']]
-        conf.write_in_data("all_articles.json", json.dumps(all_articles))
+        conf.write_in_data('all_titles.json', json.dumps(all_articles))
 
     @staticmethod
     def plotting(list_of_articles):

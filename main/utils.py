@@ -66,11 +66,23 @@ def write_in_data(path, content):
     with open(f"{base_path}/{path}", "w") as f:
         f.write(content)
 
+def read_from_data_pure_json(path):
+    with open(f'{base_path}/{path}', 'rb') as f:
+        data = f.readlines()
+
+    # remove the trailing "\n" from each line
+    data = list(map(lambda x: x.rstrip().decode("utf-8"), data))
+    data_json_str = "[" + ','.join(data) + "]"
+
+    # now, load it into pandas
+    return pd.read_json(data_json_str)
+
 def read_from_data(path):
     """
     Reads from main/data
     """
     pd.read_json(f'{base_path}/{path}')
+
 
 def path_exist(path):
     return os.path.isfile(f'{base_path}/{path}')
