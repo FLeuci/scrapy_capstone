@@ -28,6 +28,10 @@ Then generate a report with this information:
 <img width="633" alt="Screenshot" src="https://user-images.githubusercontent.com/75839583/103350362-025ffd00-4aa0-11eb-8cce-d58d50f8110b.png">
 
 ## Environments setup and first run
+First create a virtual environment
+```
+python3 -m venv scrapy_capstyone
+```
 Before to run your code be sure that the following libraries are present, otherwise run the following commands:
 ```
 pip3 install -r requirements.txt
