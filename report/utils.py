@@ -1,7 +1,9 @@
+import json
 import re
 from datetime import datetime
 import os
 import pandas as pd
+import subprocess
 
 gd_base_url = "https://blog.griddynamics.com"
 base_path = os.path.dirname(__file__) + "/data"
@@ -59,6 +61,14 @@ def count_by_key(list_of_tuple_2):
     return res
 
 
+def write_data_append(path, content):
+    """
+    Appends in main/data
+    """
+    with open(f"{base_path}/{path}", "a") as f:
+        f.write(content + "\n")
+
+
 def write_in_data(path, content):
     """
     Saves in main/data
@@ -66,23 +76,47 @@ def write_in_data(path, content):
     with open(f"{base_path}/{path}", "w") as f:
         f.write(content)
 
+
 def read_from_data_pure_json(path):
+    """
+    Reads-buffer from main/data
+    """
     with open(f'{base_path}/{path}', 'rb') as f:
         data = f.readlines()
 
     # remove the trailing "\n" from each line
     data = list(map(lambda x: x.rstrip().decode("utf-8"), data))
     data_json_str = "[" + ','.join(data) + "]"
+    return json.loads(data_json_str)
 
-    # now, load it into pandas
-    return pd.read_json(data_json_str)
 
 def read_from_data(path):
     """
     Reads from main/data
     """
-    pd.read_json(f'{base_path}/{path}')
+    return pd.read_json(f"{base_path}/{path}", lines=True)
+
+
+def drop_data_file_if_exists(path):
+    """
+    Deletes content from a file if not empty
+    """
+    if os.path.exists(f'{base_path}/{path}'):
+        os.remove(f'{base_path}/{path}')
 
 
 def path_exist(path):
+    """
+    Returns True if a file exists
+    """
     return os.path.isfile(f'{base_path}/{path}')
+
+
+def exec_spider(spider_name):
+    """
+    Runs a spider using subprocesses
+    """
+    process = subprocess.run(['scrapy', 'crawl', spider_name], check=True, stdout=subprocess.PIPE,
+                             universal_newlines=True)
+    output = process.stdout
+    print(output)

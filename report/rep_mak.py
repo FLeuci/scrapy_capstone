@@ -1,11 +1,8 @@
-import json
 import logging
-
 import matplotlib.pyplot as plt
 import pandas as pd
-from main.utils import flatten, count_by_key
-import main.utils as conf
-
+from utils import flatten, count_by_key
+import utils as conf
 
 
 class ReportMaker:
@@ -36,10 +33,6 @@ class ReportMaker:
         series = pd.Series(top5_articles_sorted['dateFormatted'].values, index=top5_articles_sorted['title'])
         return self.to_array(series[:5])
 
-    def all_articles(self, list_of_articles):
-        all_articles = list_of_articles.loc[:, ['title']]
-        conf.write_in_data('all_titles.json', json.dumps(all_articles))
-
     @staticmethod
     def plotting(list_of_articles):
         """
@@ -56,8 +49,8 @@ class ReportMaker:
         plt.xlabel('Tags')
         plt.ylabel("Tag's quantity")
         plt.title('Top 7 most popular tags')
-        logging.info('Bar chart representing the 5 most popular tags')
-        plt.savefig(f"{conf.__file__}plot.png")
+        logging.info('Bar chart representing the 5 most popular tags has been saved in "data" folder')
+        plt.savefig(f"{conf.base_path}/plot.png")
 
         return best_tags_dict_sorted
 

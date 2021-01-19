@@ -32,10 +32,12 @@ Before to run your code be sure that the following libraries are present, otherw
 ```
 pip3 install -r requirements.txt
 ```
+Add `report` folder to your PATH in order to make all custom module imports valid using
+```
+cd scrapy_capstone && export PATH=$PATH:$PWD/report && echo $PATH
+```
 
-Moreover go to the file `conf.yml` and replace the basepath with yours
-
-Finally run the following instruction from the terminal in order to execute the report generator
+Finally run the following instruction from the command line in order to execute the report generator
 ```
 python3 report.py
 ```
