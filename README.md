@@ -30,7 +30,7 @@ Then generate a report with this information:
 ## Environments setup and first run
 First create a virtual environment
 ```
-python3 -m venv scrapy_capstyone
+python3 -m venv scrapy_capstone
 ```
 Before to run your code be sure that the following libraries are present, otherwise run the following commands:
 ```
