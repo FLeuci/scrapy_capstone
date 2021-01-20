@@ -43,7 +43,7 @@ cd scrapy_capstone && export PATH=$PATH:$PWD/report && echo $PATH
 
 Finally run the following instruction from the command line in order to execute the report generator
 ```
-python3 report.py
+python3 report/report.py
 ```
 
 
