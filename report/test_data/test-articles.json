@@ -1,0 +1,43 @@
+[
+  {
+    "title": "title 1",
+    "urlFullVersion": "https://blog.griddynamics.com/title-1/",
+    "first160": "These days, when machine learning-based result  becomes a de-facto standard for e-commerce search implementations, it still relies on the high quality of the . ",
+    "dateFormatted": "20200916",
+    "tags": [
+      "tag1",
+      "tag2",
+      "tag3",
+      "tag4"
+    ],
+    "authorUrl": "https://blog.griddynamics.com/author/eugene-steinberg/",
+    "authorName": "Eugene Steinberg",
+    "author_key": "eugene-steinberg"
+  },
+  {
+    "title": "title 2",
+    "urlFullVersion": "https://blog.griddynamics.com/title-2/",
+    "first160": "These days, when machine learning-based result  becomes a de-facto standard for e-commerce search implementations, it still relies on the high quality of the . ",
+    "dateFormatted": "20190916",
+    "tags": [
+      "tag1",
+      "tag2"
+    ],
+    "authorUrl": "https://blog.griddynamics.com/author/stanislav/",
+    "authorName": "Stanislav Livotov",
+    "author_key": "stanislav"
+  },
+  {
+    "title": "title 2",
+    "urlFullVersion": "https://blog.griddynamics.com/title-2/",
+    "first160": "These days, when machine learning-based result  becomes a de-facto standard for e-commerce search implementations, it still relies on the high quality of the . ",
+    "dateFormatted": "20190916",
+    "tags": [
+      "tag1",
+      "tag2"
+    ],
+    "authorUrl": "https://blog.griddynamics.com/author/stanislav/",
+    "authorName": "Stanislav Livotov",
+    "author_key": "stanislav"
+  }
+]
