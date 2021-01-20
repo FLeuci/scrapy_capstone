@@ -30,13 +30,15 @@ Then generate a report with this information:
 ## Environments setup and first run
 First create a virtual environment
 ```
-python3 -m venv scrapy_capstone
+pip3 install virtualenv
+virtualenv scrapy_capstone
+source scrapy_capstone/bin/activate
 ```
-Before to run your code be sure that the following libraries are present, otherwise run the following commands:
+Then import the project and before to run the code run the following commands:
 ```
 pip3 install -r requirements.txt
 ```
-Add `report` folder to your PATH in order to make all custom module imports valid using
+Add `report` folder to your PATH in order to make all custom module imports valid using:
 ```
 cd scrapy_capstone && export PATH=$PATH:$PWD/report && echo $PATH
 ```
